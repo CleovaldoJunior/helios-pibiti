@@ -1,0 +1,3976 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: helios-ifsc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-01 11:45-0300\n"
+"PO-Revision-Date: 2020-09-17 15:47-0300\n"
+"Last-Translator: Shirlei Chaves <shirlei@gmail.com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#: helios/forms.py:15
+msgid "Short name"
+msgstr "Nome abreviado"
+
+#: helios/forms.py:15
+msgid "no spaces, will be part of the URL for your election, e.g. my-club-2010"
+msgstr "Sem espaços, será parte da URL da sua eleição, por ex. meu-clube-2014"
+
+#: helios/forms.py:16
+msgid "Name"
+msgstr "Nome"
+
+#: helios/forms.py:16
+msgid ""
+"the pretty name for your election, e.g. My Club 2010 Election. Maximum of "
+"250 characters."
+msgstr ""
+"O nome apresentável para a sua eleição, p.ex.: Eleição do Meu Clube 2014. "
+"Máximo de 250 caracteres."
+
+#: helios/forms.py:17
+msgid "Description"
+msgstr "Descrição"
+
+#: helios/forms.py:18
+msgid "Type"
+msgstr "Tipo"
+
+#: helios/forms.py:19
+msgid "Use voter aliases"
+msgstr "Usar pseudônimo de eleitores"
+
+#: helios/forms.py:19
+msgid ""
+"If selected, voter identities will be replaced with aliases, e.g. \"V12\", "
+"in the ballot tracking center"
+msgstr ""
+"Se marcada, a identidade dos eleitores será substituída por pseudônimos, p. "
+"ex.: \"V12\", no centro de rastreamento de cédulas."
+
+#: helios/forms.py:21
+msgid "Randomize answer order"
+msgstr "Tornar ordem das questões aleatória"
+
+#: helios/forms.py:21
+msgid ""
+"enable this if you want the answers to questions to appear in random order "
+"for each voter"
+msgstr ""
+"Habilite essa opção se você quiser que as questões apareçam em ordem "
+"aleatória para cada eleitor"
+
+#: helios/forms.py:22
+msgid "Private?"
+msgstr "Privada?"
+
+msgid "Help"
+msgstr "Ajuda"
+
+#: helios/forms.py:22
+msgid "A private election is only visible to registered voters."
+msgstr "Uma eleição privada só é visível para eleitores registrados."
+
+#: helios/forms.py:23
+msgid "Help Email Address"
+msgstr "Endereço de Email para Ajuda"
+
+#: helios/forms.py:23
+msgid "An email address voters should contact if they need help."
+msgstr "Endereço de email que os eleitores devem usar para pedir ajuda."
+
+#: helios/forms.py:26
+msgid "Election Info Download URL"
+msgstr "URL de download de informações da Eleição:"
+
+#: helios/forms.py:26
+msgid ""
+"the URL of a PDF document that contains extra election information, e.g. "
+"candidate bios and statements"
+msgstr ""
+"a URL de um documento PDF que contém informações extras, p. ex., biografias "
+"e declarações dos candidatos"
+
+#: helios/forms.py:29
+msgid "Voting starts at"
+msgstr "Votação começa em"
+
+#: helios/forms.py:29
+msgid "UTC date and time when voting begins"
+msgstr "Data e horário de início da votação"
+
+#: helios/forms.py:31
+msgid "Voting ends at"
+msgstr "Votação termina em"
+
+#: helios/forms.py:31
+msgid "UTC date and time when voting ends"
+msgstr "Data e horário de término da votação"
+
+#: helios/forms.py:35
+msgid "UTC date and time voting extended to"
+msgstr "Data e horário da extensão da votação"
+
+#: helios/forms.py:41 helios/forms.py:46
+msgid "Send To"
+msgstr "Enviar"
+
+#: helios/forms.py:41
+#, fuzzy
+#| msgid "Tally"
+msgid "all"
+msgstr "Apuração"
+
+#: helios/forms.py:41 helios/forms.py:46
+msgid "all voters"
+msgstr "todos os eleitores"
+
+#: helios/forms.py:41
+#, fuzzy
+#| msgid "vote!"
+msgid "voted"
+msgstr "votar!"
+
+#: helios/forms.py:41
+msgid "voters who have cast a ballot"
+msgstr "eleitores que depositaram uma cédula"
+
+#: helios/forms.py:41
+#, fuzzy
+#| msgid "no voters."
+msgid "not-voted"
+msgstr "nenhum eleitor."
+
+#: helios/forms.py:41
+msgid "voters who have not yet cast a ballot"
+msgstr "eleitores que ainda não depositaram uma cédula"
+
+#: helios/forms.py:46
+msgid "only voters who cast a ballot"
+msgstr "apenas eleitores que lançaram uma cédula"
+
+#: helios/forms.py:46
+msgid "no one -- are you sure about this?"
+msgstr "nenhum - você tem certeza disso?"
+
+#: helios/forms.py:49
+msgid "Voter ID"
+msgstr "ID do Eleitor"
+
+#: helios/models.py:53
+msgid "Election"
+msgstr "Eleição"
+
+#: helios/models.py:54
+msgid "Referendum"
+msgstr "Referendo"
+
+#: helios/models.py:386
+msgid "add questions to the ballot"
+msgstr "adicionar questões à cédula"
+
+#: helios/models.py:393
+msgid "add at least one trustee"
+msgstr "adicionar ao menos um apurador"
+
+#: helios/models.py:400
+#, python-format
+msgid "have trustee %s generate a keypair"
+msgstr "apurador(a) %s gerar um par de chaves"
+
+#: helios/models.py:531
+msgid "cannot freeze an election that has issues"
+msgstr "não é possível congelar uma eleição com problemas"
+
+#: helios/models.py:777
+#, python-format
+msgid "invalid voter type '%s' for voter id '%s', available voter types are %s"
+msgstr ""
+"tipo de votante '%s' inválido para votante de id '%s', os tipos de votantes "
+"disponíveis são %s"
+
+#: helios/models.py:785
+#, python-format
+msgid "invalid voter email '%s' for voter id '%s'"
+msgstr "email '%s' inválido para votante de id '%s'"
+
+#: helios/models.py:1017
+msgid "password already exists"
+msgstr "senha já existe"
+
+#: helios/models.py:1114
+msgid "cast vote is quarantined, verification and storage is delayed."
+msgstr ""
+"lançamento de votos está em quarentena, verificação e armazenamento estão "
+"postergados."
+
+#: helios/models.py:1139
+msgid ""
+"the vote's election UUID does not match the election for which this vote is "
+"being cast"
+msgstr ""
+"O UUID de eleição do voto não coincide com a eleição para a qual este voto "
+"está sendo lançado"
+
+#: helios/templates/election_view.html:233
+msgid "You are <em>not eligible</em> to vote in this"
+msgstr "Você <em>não está apto</em> a votar nesta"
+
+#: settings.py:69
+msgid "English"
+msgstr "Inglês"
+
+#: settings.py:70
+msgid "Brazilian Portuguese"
+msgstr "Português Brasileiro"
+
+#: venv/lib/python3.8/site-packages/django/contrib/messages/apps.py:7
+msgid "Messages"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sitemaps/apps.py:7
+msgid "Site Maps"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/staticfiles/apps.py:9
+#, fuzzy
+#| msgid "Statistics"
+msgid "Static Files"
+msgstr "Estatísticas"
+
+#: venv/lib/python3.8/site-packages/django/contrib/syndication/apps.py:7
+#, fuzzy
+#| msgid "Authentication"
+msgid "Syndication"
+msgstr "Autenticação"
+
+#: venv/lib/python3.8/site-packages/django/core/paginator.py:45
+msgid "That page number is not an integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/paginator.py:47
+msgid "That page number is less than 1"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/paginator.py:52
+msgid "That page contains no results"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:31
+msgid "Enter a valid value."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:102
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:658
+msgid "Enter a valid URL."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:157
+msgid "Enter a valid integer."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:168
+#, fuzzy
+#| msgid "Email address"
+msgid "Enter a valid email address."
+msgstr "Endereço de e-mail"
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: venv/lib/python3.8/site-packages/django/core/validators.py:242
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:249
+msgid ""
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:258
+#: venv/lib/python3.8/site-packages/django/core/validators.py:268
+#: venv/lib/python3.8/site-packages/django/core/validators.py:290
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:275
+#: venv/lib/python3.8/site-packages/django/core/validators.py:291
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:285
+#: venv/lib/python3.8/site-packages/django/core/validators.py:289
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:319
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:325
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:357
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:366
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:376
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:391
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:410
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:290
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:325
+msgid "Enter a number."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:412
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:417
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:422
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:484
+#, python-format
+msgid ""
+"File extension '%(extension)s' is not allowed. Allowed extensions are: "
+"'%(allowed_extensions)s'."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:536
+#, fuzzy
+#| msgid "No special characters allowed in the short name."
+msgid "Null characters are not allowed."
+msgstr "Nenhum caracter especial é permitido no nome abreviado."
+
+#: venv/lib/python3.8/site-packages/django/db/models/base.py:1165
+#: venv/lib/python3.8/site-packages/django/forms/models.py:756
+msgid "and"
+msgstr "e"
+
+#: venv/lib/python3.8/site-packages/django/db/models/base.py:1167
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:104
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:105
+msgid "This field cannot be null."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:106
+msgid "This field cannot be blank."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:107
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:111
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:128
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:905
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1772
+msgid "Integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:909
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1770
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:984
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1850
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:996
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:997
+#, python-format
+msgid "'%(value)s' value must be either True, False, or None."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:999
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1040
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1104
+msgid "Comma-separated integers"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1153
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1155
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1298
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1158
+msgid "Date (without time)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1296
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1300
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1304
+msgid "Date (with time)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1452
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1454
+msgid "Decimal number"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1593
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1596
+#, fuzzy
+#| msgid "Documentation"
+msgid "Duration"
+msgstr "Documentação"
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1646
+msgid "Email address"
+msgstr "Endereço de e-mail"
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1669
+msgid "File path"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1735
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1737
+msgid "Floating point number"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1866
+#, fuzzy
+#| msgid "Email address"
+msgid "IPv4 address"
+msgstr "Endereço de e-mail"
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1897
+#, fuzzy
+#| msgid "Email address"
+msgid "IP address"
+msgstr "Endereço de e-mail"
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1977
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1978
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1980
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2015
+msgid "Positive integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2028
+msgid "Positive small integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2042
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2074
+#, fuzzy
+#| msgid "all voters"
+msgid "Small integer"
+msgstr "todos os eleitores"
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2081
+msgid "Text"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2109
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2111
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2114
+msgid "Time"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2240
+msgid "URL"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2262
+msgid "Raw binary data"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2312
+#, python-format
+msgid "'%(value)s' is not a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2314
+msgid "Universally unique identifier"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/files.py:222
+msgid "File"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/files.py:362
+msgid "Image"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:778
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:780
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:1007
+msgid "One-to-one relationship"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:1057
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:1058
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:1100
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python3.8/site-packages/django/forms/boundfield.py:146
+msgid ":?.!"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:53
+msgid "This field is required."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:245
+msgid "Enter a whole number."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:396
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1126
+msgid "Enter a valid date."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:420
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1127
+msgid "Enter a valid time."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:442
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:471
+msgid "Enter a valid duration."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:472
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:532
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:533
+msgid "No file was submitted."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:534
+msgid "The submitted file is empty."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:536
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:539
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:600
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:762
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:852
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1270
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:853
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:968
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1269
+#, fuzzy
+#| msgid "view the list of voters"
+msgid "Enter a list of values."
+msgstr "visualizar a lista de eleitores"
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:969
+msgid "Enter a complete value."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1185
+msgid "Enter a valid UUID."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.8/site-packages/django/forms/forms.py:86
+msgid ":"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/forms.py:212
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:91
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:338
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:345
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:371
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:373
+msgid "Order"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:375
+msgid "Delete"
+msgstr "Apagar"
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:751
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:755
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:761
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:770
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1091
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1158
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1272
+#, python-format
+msgid "\"%(pk)s\" is not a valid value."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/utils.py:162
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:395
+msgid "Clear"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:396
+msgid "Currently"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:397
+msgid "Change"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:709
+msgid "Unknown"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:710
+msgid "Yes"
+msgstr "Sim"
+
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:711
+msgid "No"
+msgstr "Não"
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:788
+msgid "yes,no,maybe"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:817
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:834
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:836
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:838
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:840
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:842
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:844
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:62
+msgid "p.m."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:63
+msgid "a.m."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:68
+msgid "PM"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:69
+msgid "AM"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:150
+msgid "midnight"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:152
+msgid "noon"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:10
+#, fuzzy
+#| msgid "Trustee"
+msgid "Tue"
+msgstr "Apurador"
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:11
+#, fuzzy
+#| msgid "Start"
+msgid "Sat"
+msgstr "Início"
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:14
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:14
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:14
+#, fuzzy
+#| msgid "search"
+msgid "March"
+msgstr "buscar"
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:14
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:14
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:14
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:15
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:15
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:15
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:15
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:15
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:16
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:19
+#, fuzzy
+#| msgid "and"
+msgid "jan"
+msgstr "e"
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:19
+msgid "feb"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:19
+msgid "mar"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:19
+msgid "apr"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:19
+msgid "may"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:19
+msgid "jun"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:20
+msgid "jul"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:20
+msgid "aug"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:20
+msgid "sep"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:20
+msgid "oct"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:20
+msgid "nov"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:20
+msgid "dec"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:23
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:24
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:25
+#, fuzzy
+#| msgid "search"
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "buscar"
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:26
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:27
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:28
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:29
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:30
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:31
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:32
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:33
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:34
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:37
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:38
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:39
+#, fuzzy
+#| msgid "search"
+msgctxt "alt. month"
+msgid "March"
+msgstr "buscar"
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:40
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:41
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:42
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:43
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:44
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:45
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:46
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:47
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:48
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/text.py:68
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/text.py:237
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.8/site-packages/django/utils/text.py:256
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:83
+msgid ", "
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:14
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:72
+msgid "0 minutes"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:110
+msgid "Forbidden"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:111
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:115
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:120
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:124
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
+"CSRF protection requires the 'Referer' header to do strict referer checking. "
+"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" ...> for links to third-party sites."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:132
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:137
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:142
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:41
+msgid "No year specified"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:61
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:111
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:208
+msgid "Date out of range"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:90
+msgid "No month specified"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:142
+msgid "No day specified"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:188
+msgid "No week specified"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:338
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:367
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:589
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:623
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/detail.py:54
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/list.py:67
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/list.py:72
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/list.py:154
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/static.py:40
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/static.py:42
+#, fuzzy, python-format
+#| msgid "Institution does not exist"
+msgid "\"%(path)s\" does not exist"
+msgstr "A instituição não existe"
+
+#: venv/lib/python3.8/site-packages/django/views/static.py:80
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:6
+msgid "Django: the Web framework for perfectionists with deadlines."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:345
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:367
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:368
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:383
+#, fuzzy
+#| msgid "Documentation"
+msgid "Django Documentation"
+msgstr "Documentação"
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:384
+msgid "Topics, references, &amp; how-to's"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:395
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:396
+msgid "Get started with Django"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:407
+msgid "Django Community"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/templates/default_urlconf.html:408
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/httplib2/__init__.py:385
+#, python-format
+msgid "Content purported to be compressed with %s but failed to decompress."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/httplib2/__init__.py:549
+#, python-format
+msgid "Unsupported value for qop: %s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/httplib2/__init__.py:553
+#: venv/lib/python3.8/site-packages/httplib2/__init__.py:631
+#, python-format
+msgid "Unsupported value for algorithm: %s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/httplib2/__init__.py:626
+msgid "The challenge doesn't contain a server nonce, or this one is empty."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/httplib2/__init__.py:636
+#, python-format
+msgid "Unsupported value for pw-algorithm: %s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/httplib2/__init__.py:1445
+msgid "Redirected but the response is missing a Location: header."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/kombu/transport/qpid.py:1301
+#, python-format
+msgid "Attempting to connect to qpid with SASL mechanism %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/kombu/transport/qpid.py:1306
+#, python-format
+msgid "Connected to qpid with SASL mechanism %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/kombu/transport/qpid.py:1324
+#, python-format
+msgid "Unable to connect to qpid with SASL mechanism %s"
+msgstr ""
+
+#~ msgid ""
+#~ "Maximum of 4000 characters. You can use the HTML tags: <p>, <h4>, <h5>, "
+#~ "<h3>, <h2>, <br>, <u>."
+#~ msgstr ""
+#~ "Máximo de 4000 caracteres. Podem ser usadas as seguintes tags HTML: <p>, "
+#~ "<h4>, <h5>, <h3>, <h2>, <br>, <u>."
+
+#~ msgid "Use advanced audit features"
+#~ msgstr "Usar auditoria de cédulas"
+
+#~ msgid ""
+#~ "disable this only if you want a simple election with reduced security but "
+#~ "a simpler user interface"
+#~ msgstr ""
+#~ "Desabilite essa opção se você quiser uma interface de usuário mais "
+#~ "simples."
+
+#~ msgid "Voting extended until"
+#~ msgstr "Votação estentida até"
+
+#~ msgid "Anyone can vote."
+#~ msgstr "Qualquer eleitor que possa se conectar no sistema."
+
+#~ msgid "enter your voter list (or open registration to the public)"
+#~ msgstr ""
+#~ "informar a lista de eleitores (ou tornar o registro aberto ao público)"
+
+#~ msgid "no election ID"
+#~ msgstr "Nenhum ID de eleição"
+
+#~ msgid "encrypted tally computed"
+#~ msgstr "apuração criptografada apurada"
+
+#~ msgid "voter file processed"
+#~ msgstr "arquivo de eleitores processado"
+
+#~ msgid ""
+#~ "Your voter file upload for %(election_name)s has been processed\n"
+#~ " "
+#~ msgstr ""
+#~ "O arquivo para a eleição %(election_name)s foi processado\n"
+#~ " "
+
+#~ msgid ""
+#~ "%(number_of_voters)s voters have been created \n"
+#~ "\n"
+#~ msgstr ""
+#~ "%(number_of_voters)s eleitores foram processados \n"
+#~ "\n"
+
+msgid "You are logged in as "
+msgstr "Você está conectado como "
+
+#~ msgid "CAST this ballot"
+#~ msgstr "CONFIRMAR"
+
+#~ msgid "cancel"
+#~ msgstr "cancelar"
+
+#~ msgid ""
+#~ "You can cast as many ballots as you want.<em><br>Only the last one "
+#~ "counts</em>."
+#~ msgstr ""
+#~ "Você pode repetir esse processo quantas vezes desejar enquanto a eleição "
+#~ "estiver aberta. <em> <br>Apenas o último voto depositado é considerado</"
+#~ "em>."
+
+#~ msgid ""
+#~ "If you cancel now, your ballot will <em>NOT</em> be recorded.<br />\n"
+#~ "    You can start the voting process over again, of course."
+#~ msgstr ""
+#~ "Se você cancelar agora, sua cédula <em>NÃO</em> será registrada.<br />\n"
+#~ "    Você pode reiniciar o processo de votação mais tarde."
+
+#~ msgid "voting has stopped, sorry."
+#~ msgstr "Desculpe-nos, o período para depositar cédulas já encerrou."
+
+#~ msgid "voting has not yet begun, sorry."
+#~ msgstr ""
+#~ "Desculpe-nos, mas a votação ainda não está aberta para esta eleição."
+
+#~ msgid "Visit"
+#~ msgstr "Acesse"
+
+#~ msgid "for more info."
+#~ msgstr "para mais informações."
+
+#~ msgid "Please provide the voter ID and password you received by email."
+#~ msgstr "Informe o ID de eleitor e senha que você recebeu por email."
+
+#~ msgid "Password"
+#~ msgstr "Senha"
+
+#~ msgid "bad voter ID or password, please try again."
+#~ msgstr "Usuário ou senha incorretos, por favor, tente novamente."
+
+#~ msgid "Confirm"
+#~ msgstr "CONFIRMAR"
+
+#~ msgid "Login"
+#~ msgstr "Conectar"
+
+msgid "logged in as"
+msgstr "Conectado como"
+
+#~ msgid ""
+#~ "\n"
+#~ "    Congratulations, your vote has been <b><u>successfully cast</u></b>!\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Parabéns, seu voto foi <u><b>depositado com sucesso</u></b>!\n"
+
+# msgstr ""
+# "\n"
+# "    Você receberá em breve um e-mail confirmando que seu voto foi depositado "
+# "corretamente. Assim que receber este e-mail você poderá acessar a página "
+# "pública da eleição, através do link abaixo, e verificar que o número "
+# "rastreador da sua célula aparece na listagem de cédulas depositadas na urna. "
+# "Essa é a sua garantiria que seu voto será contabilizado corretamente.\n"
+#~ msgid "Your smart ballot tracker is:"
+#~ msgstr "O número do rastreador da sua cédula é:"
+
+#~ msgid "For your safety, we have logged you out."
+#~ msgstr ""
+#~ "Você foi desconectado. Por favor, para sua segurança, feche seu navegador."
+
+#~ msgid "Cast Vote"
+#~ msgstr "Voto(s) Depositado(s)"
+
+#~ msgid "cast in"
+#~ msgstr "depositado em"
+
+#~ msgid "Fingerprint: "
+#~ msgstr "Código de Identificação: "
+
+#~ msgid "Compute Tally"
+#~ msgstr "Computar Apuração"
+
+#~ msgid ""
+#~ "You are about to compute the tally for this election. You only will then "
+#~ "see the results."
+#~ msgstr ""
+#~ "Você está prestes a computar a apuração desta eleição. Somente depois "
+#~ "disso é que você verá o resultado."
+
+#~ msgid "compute the tally!"
+#~ msgstr "computar a apuração !"
+
+#~ msgid "Audited Ballots for "
+#~ msgstr "Cédulas Auditadas para "
+
+#~ msgid "Audited Ballots"
+#~ msgstr "Cédulas Auditadas"
+
+#~ msgid "back to election"
+#~ msgstr "voltar para a eleição"
+
+#~ msgid ""
+#~ "\n"
+#~ "When you prepare a ballot with Helios, you immediately receive a smart "
+#~ "ballot tracker. Before you choose to cast that ballot, you have the "
+#~ "option to ask Helios to \"break open\" that encrypted ballot and verify "
+#~ "that Helios encrypted your ballot correctly. Once that's done, you can "
+#~ "post that opened ballot here, on the audited ballots' list, for everyone "
+#~ "to verify (your identity is not included). Once you've done this, you "
+#~ "have to re-encrypt your choices and obtain a different smart ballot "
+#~ "tracker. This helps reduce the chance that someone might coerce you to "
+#~ "vote differently from your true choice.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Quando você prepara uma cédula com o Helios, recebe um rastreador para "
+#~ "posteriormente verificar se sua cédula foi contabilizada. Antes de "
+#~ "resolver depositar a cédula na urna, você pode solicitar ao sistema que "
+#~ "abra a cédula cifrada e verifique se a mesma foi cifrada corretamente (se "
+#~ "realmente contém o seu voto). Depois disso, você pode postar essa cédula "
+#~ "aberta na lista de cédulas auditadas, para que qualquer um possa "
+#~ "verificar (sua identidade não será incluída). Você pode fazer isso "
+#~ "quantas vezes quiser. \n"
+#~ " Escolhendo ou não postar essa cédula auditada, você deve voltar para a "
+#~ "cédula de votação e a cifrar novamente, obtendo então um novo rastreador. "
+#~ "Isso ajuda a reduzir as chances de que alguém possa coagi-lo a votar de "
+#~ "modo diverso à sua real escolha.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "These ballots are <em>not cast</em>, and they will not be counted. They "
+#~ "are just here for auditing purposes, to spot-check that Helios is "
+#~ "properly encrypting voter's choices.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Essas cédulas <em>não estão depositadas na urna</em>, portanto não serão "
+#~ "contabilizadas. Elas estão aqui apenas com o propósito de auditoria, para "
+#~ "verificar que o sistema de votação está cifrando corretamente as escolhas "
+#~ "do eleitor.\n"
+
+#~ msgid ""
+#~ "To verify an audited ballot, copy its entire content and paste it in the  "
+#~ msgstr ""
+#~ "Para verificar uma cédula auditada, copie todo o seu conteúdo e cole-o no "
+
+#~ msgid "single ballot verifier"
+#~ msgstr "verificador de uma única cédula"
+
+#~ msgid "Audited Ballots "
+#~ msgstr "Cédulas Auditadas "
+
+#~ msgid "next "
+#~ msgstr "próximo "
+
+#~ msgid "back to start"
+#~ msgstr "voltar ao início"
+
+#~ msgid "next"
+#~ msgstr "próximo"
+
+#~ msgid "view"
+#~ msgstr "visualizar"
+
+#~ msgid "no audited ballots yet"
+#~ msgstr "nenhuma cédula auditada ainda"
+
+#~ msgid ""
+#~ "\n"
+#~ "  This is the ballot tracking center, which displays the tracking numbers "
+#~ "of all cast ballots in this election.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  Este é o centro de rastreamento de cédulas,  o qual mostra os números "
+#~ "de rastreamento  de todas as cédulas lançadas nesta eleição. \n"
+
+#~ msgid "Voters"
+#~ msgstr "Eleitores"
+
+#~ msgid "Alias"
+#~ msgstr "Pseudônimo"
+
+#~ msgid "Smart Ballot Tracker"
+#~ msgstr "Rastreador da Cédula"
+
+#~ msgid "Questions"
+#~ msgstr "Questões"
+
+#~ msgid "Confirm Vote"
+#~ msgstr "Confirmar Voto"
+
+#~ msgid "Submitting your vote for "
+#~ msgstr "Depositando seu voto na urna para a eleição: "
+
+#~ msgid "Verifying and Casting your ballot"
+#~ msgstr "Verificando e depositando sua cédula"
+
+#~ msgid "Wait!"
+#~ msgstr "Atenção!"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "        <h1>Sorry!</h1>\n"
+#~| "        <em>Sorry, you are</em>\n"
+#~| "    "
+#~ msgid ""
+#~ "\n"
+#~ "        <h1>Sorry!</h1>\n"
+#~ "        <em>Sorry, you are \n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "        <h1>Desculpe-nos!</h1>\n"
+#~ "        <em>Você está \n"
+#~ "    "
+
+#~ msgid ""
+#~ "\n"
+#~ "        <u>not eligible</u></em> for this election.\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "        <u>não elegível</u></em> para está eleição.\n"
+#~ "        "
+
+#~ msgid ""
+#~ "\n"
+#~ "        not registered</em> for this election, and registration is "
+#~ "closed.\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "não está registrado</em> para essa eleição, e o registro está fechado."
+
+#~ msgid "return to the main election page"
+#~ msgstr "retornar para a página da eleição"
+
+#~ msgid "Wait! You need to log in."
+#~ msgstr "Você precisa se conectar para depositar o voto."
+
+#~ msgid ""
+#~ "\n"
+#~ " This election is open to <em>anyone</em>, so log in with your preferred "
+#~ "account.\n"
+#~ " "
+#~ msgstr ""
+#~ "\n"
+#~ " Esta eleição está aberta para <em>todo mundo</em>, então conecte com sua "
+#~ "conta preferida.\n"
+#~ " "
+
+#~ msgid ""
+#~ "\n"
+#~ "This election is only open to <em>registered voters</em>, so log in with\n"
+#~ "the same account you registered with.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Essa eleição está aberta para <em>eleitores registrados</em>, portanto "
+#~ "conecte-se\n"
+#~ "com a mesma conta com a qual você se registrou.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Don't worry, we'll remember your ballot while you log in.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Compute Tally for Election:"
+#~ msgstr "Computar Apuração para a Eleição:"
+
+#~ msgid "You are about to compute the encrypted tally for election"
+#~ msgstr ""
+#~ "Você está prestes a computar a apuração criptografada para a eleição"
+
+#~ msgid ""
+#~ "\n"
+#~ "    Once you do this, voters will no longer be able to cast a ballot.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Depois que você fizer isso, eleitores não conseguirão mais votar.\n"
+
+#~ msgid "compute encrypted tally!"
+#~ msgstr "computar apuração criptografada!"
+
+#~ msgid "never mind"
+#~ msgstr "deixar para depois"
+
+#~ msgid ""
+#~ "\n"
+#~ "No votes have been cast in this election. At least one vote must be cast "
+#~ "before you compute the tally.<br /><br />\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Nenhum voto foi depositado nessa eleição. Ao menos um voto precisa ser "
+#~ "depositado antes de você computar a apuração.<br /><br />\n"
+
+#~ msgid "Update"
+#~ msgstr "Atualizar"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+
+#~ msgid "Extend Voting"
+#~ msgstr "Estender votação"
+
+#~ msgid "Freeze Ballot"
+#~ msgstr "Congelar Cédula"
+
+#~ msgid ""
+#~ "\n"
+#~ "Once the ballot is frozen, the questions and options can no longer be "
+#~ "modified.<br />\n"
+#~ "The list of trustees and their public keys will also be frozen.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Assim que a cédula for congelada, nenhuma informação da eleição poderá "
+#~ "ser modificada. O que inclui: suas questões, os apuradores e outros "
+#~ "detalhes da eleição.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Registration for your election is currently <b>open</b>, which means "
+#~ "anyone can vote, even after you freeze the ballot.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Registration for your election is currently <b>closed</b>, which means "
+#~ "only the voters you designate will be able to cast a ballot. As the "
+#~ "administrator, you will still be able to modify that voter list as the "
+#~ "election progresses.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "You must freeze the ballot before you can contact voters.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Você precisa congelar a cédula antes de poder contactar os eleitores.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "    Before you can freeze the election, you will need to:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Antes de congelar a eleição, você precisará:\n"
+
+#~ msgid "go back to the election"
+#~ msgstr "voltar para a eleição"
+
+#~ msgid "Freeze the ballot"
+#~ msgstr "Congelar a cédula"
+
+#~ msgid "Key Setup"
+#~ msgstr "Configuração de chave"
+
+#~ msgid "As a trustee, it's time to set up your key for this election."
+#~ msgstr "Como apurador, é hora de configurar sua chave para essa eleição."
+
+#~ msgid "Please wait for the generator to load..."
+#~ msgstr "Por favor, aguarde o carregamento do gerador..."
+
+#~ msgid "Generate Election Keys"
+#~ msgstr "Gerar Chaves da Eleição"
+
+#~ msgid "If you've already generated a keypair, you can"
+#~ msgstr "Se você já tem um par de chaves, você pode"
+
+#~ msgid "reuse it"
+#~ msgstr "reutilizá-la"
+
+#~ msgid "Reusing a Key"
+#~ msgstr "Reutilizando uma Chave"
+
+#~ msgid "Enter your complete secret key below:"
+#~ msgstr "Informe sua chave privada completa abaixo:"
+
+#~ msgid "reuse"
+#~ msgstr "reusar"
+
+#~ msgid "Your Secret Key"
+#~ msgstr "Sua Chave Secreta"
+
+#~ msgid "Your key has been generated, but you may choose to "
+#~ msgstr "Sua chave foi gerada, mas você pode optar por "
+
+#~ msgid "clear it from memory and start from scratch</a> if you prefer."
+#~ msgstr "limpar da memória e começar do zero</a> se preferir."
+
+#~ msgid "Show my secret key"
+#~ msgstr "Exibir minha chave secreta"
+
+#~ msgid ""
+#~ "\n"
+#~ "        Bellow is your trustee secret key content. Please copy its "
+#~ "content and save it securely. <br>\n"
+#~ "       You can also click to dowload it to a file.\n"
+#~ "       And please don't lose it! Otherwise it will not be possible to "
+#~ "decrypt the election tally.<br>\n"
+#~ "       "
+#~ msgstr ""
+#~ "\n"
+#~ "        Abaixo se encontra o conteúdo da sua chave secreta de apurador. "
+#~ "Por favor, copie o conteúdo e salve de modo seguro. <br>\n"
+#~ "       Você também pode fazer download dela para salvar em arquivo."
+#~ "<br><br>\n"
+#~ "       <strong>E, por favor, NÃO A PERCA! Se sua chave secreta for "
+#~ "perdida, não será possível apurar o resultado da eleição.</strong><br>\n"
+#~ "       "
+
+#~ msgid "download private key to a file"
+#~ msgstr "salvar chave secreta em arquivo"
+
+#~ msgid "ok, I've saved the key, let's move on"
+#~ msgstr "já salvei a chave, prosseguir"
+
+#~ msgid "Your Public Key"
+#~ msgstr "Sua Chave Pública"
+
+#~ msgid "It's time to upload the public key to the server."
+#~ msgstr "É hora de carregar a chave pública para o servidor."
+
+#~ msgid "The fingerprint of your public key is:"
+#~ msgstr "O código de identificação da  sua chave pública é:"
+
+#~ msgid ""
+#~ "\n"
+#~ "    You may want to save this to confirm that your public key was "
+#~ "properly stored by the server.<br />\n"
+#~ "    (Your public key is not currently being displayed because you do not "
+#~ "need to save it, the fingerprint is sufficient.)\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "    Você pode salvar este código para conferir se a sua chave pública foi "
+#~ "corretamente salva no servidor.<br />\n"
+#~ "\n"
+#~ "    "
+
+#~ msgid ""
+#~ "\n"
+#~ "    <strong>Attention:</strong>\n"
+#~ "    After you upload your public key, the private key that you've saved "
+#~ "is only of your knowledge/possession so if you lose it\n"
+#~ "    will be impossible to recover or tally the election. So, keep it safe "
+#~ "and secure!\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "    <strong>Atenção:</strong> \n"
+#~ "    Depois que você carregar a sua chave pública, a chave privada que "
+#~ "você salvou é apenas de seu conhecimento e posse, \n"
+#~ "    entao se perdê-la não será possível recuperar ou apurar a eleição. "
+#~ "Portanto, não a perca e guarde-a de modo seguro!\n"
+#~ "    "
+
+#~ msgid "Upload your public key"
+#~ msgstr "Carregar sua chave pública"
+
+#~ msgid "Create a New Election"
+#~ msgstr "Criar uma Nova Eleição"
+
+#~ msgid "Next"
+#~ msgstr "Próximo"
+
+#~ msgid "Create a New Election:"
+#~ msgstr "Criar uma Nova Eleição:"
+
+#~ msgid ""
+#~ "\n"
+#~ "  <b>An election managed by Helios</b>.\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "  <b>Uma eleição gerenciada pelo Helios</b>.\n"
+#~ "  "
+
+#~ msgid ""
+#~ "\n"
+#~ "  <b>An election managed by you, the single administrator</b>.\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "  <b>Uma eleição gerenciada por você, o único administrador</b>.\n"
+#~ "  "
+
+#~ msgid ""
+#~ "\n"
+#~ "<b>An election managed by multiple trustees</b>.\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "<b>Uma eleição gerenciada por múltiplos apuradores</b>.\n"
+#~ "  "
+
+#~ msgid ""
+#~ "\n"
+#~ "   Generate Election Keys\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "   Gerar Chaves da Eleição\n"
+#~ "  "
+
+#~ msgid ""
+#~ "\n"
+#~ "  Trustees (up to 5)\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  Apuradores (até 5)\n"
+
+#~ msgid "create"
+#~ msgstr "criar"
+
+#~ msgid ""
+#~ "\n"
+#~ "      Your Election's Secret Key:<br />\n"
+#~ "      "
+#~ msgstr ""
+#~ "\n"
+#~ "     Sua Chave Privada Secreta da Eleição:<br />\n"
+#~ "      "
+
+#~ msgid ""
+#~ "\n"
+#~ "      (You need to copy and paste this key and keep it safe,<br />\n"
+#~ "      otherwise you won't be able to tally your election.)\n"
+#~ "      "
+#~ msgstr ""
+#~ "\n"
+#~ "      (Você precisa copiar e colar esta chave e mantê-la em segurança,"
+#~ "<br />\n"
+#~ "      do contrário, você não vai conseguir apurar a sua eleição.)\n"
+#~ "      "
+
+#~ msgid "Election Not Yet Open"
+#~ msgstr "A eleição ainda não está aberta."
+
+#~ msgid ""
+#~ "\n"
+#~ "      This election is not yet open. You probably got here from the "
+#~ "Ballot Preview.\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "      Esta eleição ainda não está aberta. Você provavelmente chegou até "
+#~ "aqui a partir da Pré-visualização da Cédula.\n"
+#~ "  "
+
+#~ msgid "back to the election"
+#~ msgstr "voltar para a eleição"
+
+#~ msgid "Register"
+#~ msgstr "Registrar"
+
+#~ msgid ""
+#~ "\n"
+#~ "    You are currently logged in as %(user.user_id)s [%(user.user_type)s]\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Você está conectado atualmente como %(user.user_id)s [%(user."
+#~ "user_type)s]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "    You are currently registered for this election.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Atualmente você está registrado para essa eleição.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "    You are <em>not</em> registered for this election.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Você <em>não está</em> registrado para essa eleição.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "    You are <em>not eligible</em> to vote in this.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Você <em>não está</em> registrado para essa eleição.\n"
+
+#~ msgid "register!"
+#~ msgstr "registrar!"
+
+#~ msgid ""
+#~ "\n"
+#~ "  Election %(election.name)s Already Tallied\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "  Eleição %(election.name)s já apurada\n"
+#~ "  "
+
+#~ msgid ""
+#~ "\n"
+#~ "      This election has already been tallied, you can no longer cast a "
+#~ "vote.\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "      Essa eleição já foi apurada, você não pode mais depositar voto.\n"
+#~ "  "
+
+#~ msgid "view the election tally"
+#~ msgstr "ver a apuração da eleição"
+
+#~ msgid "created by"
+#~ msgstr "criado(a) por"
+
+#~ msgid "[archived]"
+#~ msgstr "arquivada"
+
+#~ msgid "edit"
+#~ msgstr "editar"
+
+#~ msgid "unarchive it"
+#~ msgstr "desarquivar"
+
+#~ msgid "archive it"
+#~ msgstr "arquivar"
+
+#~ msgid "copy"
+#~ msgstr "copiar"
+
+#~ msgid "featured on the front page."
+#~ msgstr "destacada na página inicial."
+
+#~ msgid "unfeature it"
+#~ msgstr "remover destaque"
+
+#~ msgid "is <u>not</u> featured on the front page."
+#~ msgstr "<u>não está</u> destacada na página inicial."
+
+#~ msgid "feature it"
+#~ msgstr "destacar"
+
+#~ msgid "Election URL:"
+#~ msgstr "URL da Eleição:"
+
+#~ msgid "Election Fingerprint:"
+#~ msgstr "Código de Identificação da Eleição:"
+
+#~ msgid "You are registered to vote in this "
+#~ msgstr "Você está apto a votar nesta "
+
+#~ msgid "Your voter alias is "
+#~ msgstr "Usar pseudônimo de eleitor é "
+
+#~ msgid "You are eligible to vote in this election."
+#~ msgstr "Você está apto a votar nessa eleição."
+
+#~ msgid "This election is open to:"
+#~ msgstr "Quem pode votar nessa eleição:"
+
+#~ msgid "Any user with credentials"
+#~ msgstr "Qualquer eleitor que possa se conectar no sistema."
+
+#~ msgid "Anyone can vote in this election."
+#~ msgstr "Qualquer eleitor que tenha um nome de usuário e senha no sistema."
+
+#~ msgid "questions"
+#~ msgstr "questões"
+
+#~ msgid "voters &amp; ballots"
+#~ msgstr "eleitores &amp; cédulas"
+
+#~ msgid "trustees"
+#~ msgstr "apuradores"
+
+#~ msgid "Next Step:"
+#~ msgstr "O que você ainda precisa fazer:"
+
+#~ msgid "freeze ballot and open election."
+#~ msgstr "congelar cédula e abrir eleição."
+
+#~ msgid ""
+#~ " once you do this, the election will be ready for voting and will open "
+#~ "automatically<br />\n"
+#~ "\t\t\t\tat %(voting_starts_at)s, as per your settings.\n"
+#~ "\t\t\t\t"
+#~ msgstr ""
+#~ " Após fazer isso, a eleição estará pronta para votação e será aberta "
+#~ "automaticamente <br/> \n"
+#~ "em %(voting_starts_at)s, conforme configurado. \n"
+#~ "ATENÇÃO:  caso você tenha cadastrado uma lista de eleitores, é necessário "
+#~ "enviar email para os mesmos, para que recebam usuário e senha para "
+#~ "votação. Sem esses dados, eles não poderão votar.\n"
+#~ "\t\t\t\t"
+
+#~ msgid "once you do this, the election will be immediately open for voting."
+#~ msgstr ""
+#~ "Após fazer isso, a eleição será aberta imediatamente para votação. <br /"
+#~ ">ATENÇÃO:  caso você tenha cadastrado uma lista de eleitores, é "
+#~ "necessário enviar email para os mesmos, para que recebam usuário e senha "
+#~ "para votação. Sem esses dados, eles não poderão votar."
+
+#~ msgid ""
+#~ "\n"
+#~ "Tally computation is under way.<br />\n"
+#~ "Reload this page in a couple of minutes.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "A computação da apuração está a caminho.<br />\n"
+#~ "Recarregue essa página em alguns minutos.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "compute encrypted tally</a><br />\n"
+#~ "The encrypted votes will be combined into an encrypted tally. Once this "
+#~ "is done,<br />\n"
+#~ "trustees will be asked to provide their share of the decryption.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Iniciar a apuração dos votos, ninguém mais poderá votar.</a><br />\n"
+
+#~ msgid "release result"
+#~ msgstr "liberar o resultado"
+
+#~ msgid ""
+#~ "\n"
+#~ "The result displayed below is visible only to you.<br />\n"
+#~ "Once you release the result, it will be visible to everyone.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "O resultado mostrado abaixo está visível apenas para você.<br />\n"
+#~ "Após você tornar público o resultado, o mesmo estará disponível para "
+#~ "todos com direito de acesso à esta página.\n"
+
+#~ msgid "compute results"
+#~ msgstr "computar o resultado"
+
+#~ msgid "combine trustee decryptions and compute results"
+#~ msgstr "combinar a desencriptação dos apuradores e  computar o resultado"
+
+#~ msgid ""
+#~ "The result will be computed and shown to you, the administrator, only."
+#~ msgstr ""
+#~ "O resultado será computado e exibido apenas para você, o administrador da "
+#~ "eleição."
+
+#~ msgid ""
+#~ "\n"
+#~ "The decryption shares from the trustees will be combined and the tally "
+#~ "computed.<br />\n"
+#~ "Once you do this, the tally will visible to you, the administrator, "
+#~ "only.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "As partes desencriptadas de cada apurador serão combinadas e a apuração "
+#~ "será computada.<br />\n"
+#~ "Depois de fazer isso, a apuração estará visível apenas para você, o "
+#~ "administrador da eleição.\n"
+
+msgid "trustees (for decryption)"
+msgstr "apuradores (para desencriptação)"
+
+msgid "This election is complete."
+msgstr "Essa eleição está completa."
+
+msgid "Question"
+msgstr "Questão"
+
+#~ msgid "Election closed. Results will be released soon."
+#~ msgstr "Eleição fechada. O resultado será liberado logo."
+
+#~ msgid "Vote in this"
+#~ msgstr "Votar nessa"
+
+#~ msgid ""
+#~ "\n"
+#~ "This election is <em>private</em>. You are signed in as eligible voter:  "
+#~ "<em>%(voter)s</em>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Essa eleição é <em>privada</em>. Você está conectado como um eleitor "
+#~ "apto: <em>%(voter)s</em>.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "You do not have Java installed in your browser.<br />At this time, Helios "
+#~ "requires Java.<br />\n"
+#~ "Visit <a target=\"_new\" href=\"http://java.sun.com\">java.sun.com</a> to "
+#~ "install it.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  Você não tem o Java instalado em seu computador.<br />Por enquanto, o "
+#~ "Helios requer Java.<br />\n"
+#~ "  Visite <a target=\"_new\" href=\"http://java.sun.com\">java.sun.com</a> "
+#~ "para instalá-lo.\n"
+
+#~ msgid "voting is not yet open"
+#~ msgstr "Esta eleição ainda não está aberta para votação."
+
+#~ msgid "verify"
+#~ msgstr "Conferir a"
+
+#~ msgid "election tally"
+#~ msgstr "apuração da eleição"
+
+#~ msgid "review the"
+#~ msgstr "Visualizar a"
+
+#~ msgid "voting booth"
+#~ msgstr "cabine de votação"
+
+#~ msgid "review purposes only"
+#~ msgstr "apenas para conferência"
+
+#~ msgid "Election scheduling info"
+#~ msgstr "Cronograma da eleição"
+
+#~ msgid ""
+#~ "\n"
+#~ "\t\t\t\t\t  Election begin: %(voting_starts_at)s\n"
+#~ "\t\t\t\t  "
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t\t\t\t  Início da eleição: %(voting_starts_at)s\n"
+#~ "\t\t\t\t  "
+
+#~ msgid ""
+#~ "\n"
+#~ "\t\t\t\t\t  Election end: %(voting_starts_at)s\n"
+#~ "\t\t\t\t\t  "
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t\t\t\t  Término da eleição: %(voting_starts_at)s\n"
+#~ "\t\t\t\t\t  "
+
+#~ msgid ""
+#~ "This {{election.election_type}} ends at the administrator's discretion."
+#~ msgstr ""
+#~ "Esta {{election.election_type}} termina quando o administrador a encerrar."
+
+#~ msgid ""
+#~ "\n"
+#~ "\t\t\t\t  This %(pretty_type)s was initially scheduled to end at "
+#~ "%(voting_ends_at)s, but has been extended until "
+#~ "%(voting_extended_until)s.\n"
+#~ "\t\t\t  "
+#~ msgstr ""
+#~ "\n"
+#~ "Essa %(pretty_type)s foi inicialmente agendada para terminar em "
+#~ "%(voting_ends_at)s,<br />\n"
+#~ "mas foi extendida até %(voting_extended_until)s.\n"
+#~ "\t"
+
+#~ msgid "extend voting"
+#~ msgstr "estender votação"
+
+#~ msgid "Audit Info"
+#~ msgstr "Informação de auditoria"
+
+#~ msgid "Your smart ballot tracker:"
+#~ msgstr "O rastreador da sua cédula é:"
+
+#~ msgid "Ballot Tracking Center"
+#~ msgstr "Central de Rastreamento de Cédula"
+
+#~ msgid "preview booth"
+#~ msgstr "pré-visualização da urna"
+
+#~ msgid ""
+#~ "\n"
+#~ "review the <a href=\"%(vote_url)s\">voting booth</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "revisar a <a href=\"%(vote_url)s\">cabine de votação</a>.\n"
+
+#~ msgid "Elections you Administer"
+#~ msgstr "Eleições que você administra"
+
+#~ msgid "back to home"
+#~ msgstr "voltar para início"
+
+#~ msgid "Elections where you voted"
+#~ msgstr "Eleições nas quais você votou"
+
+#~ msgid "Trustees for"
+#~ msgstr "Apuradores para"
+
+#~ msgid "Trustees"
+#~ msgstr "Apuradores"
+
+#~ msgid ""
+#~ "\n"
+#~ "    Trustees are responsible for decrypting the election result.<br />\n"
+#~ "    Each trustee generates a keypair and submits the public portion to "
+#~ "Helios.<br />\n"
+#~ "    When it's time to decrypt, each trustee needs to provide his secret "
+#~ "key.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Adicione aqui as pessoas que poderão apurar o resultado da eleição. "
+#~ "Cada uma das pessoas indicadas como apurador receberá um e-mail para que "
+#~ "criem seu par de chaves criptográficas e que carreguem sua chave pública "
+#~ "para esta eleição.<br>\n"
+#~ "    A urna só poderá ser aberta para a eleição depois que todos os "
+#~ "apuradores cadastrados entrarem na interface de apuração e fornecerem sua "
+#~ "chave privada. ATENÇÃO: Se um apurador perder sua chave, a urna não "
+#~ "poderá ser aberta e todos os votos serão perdidos. <br><br>\n"
+#~ "ATENÇÃO: Após adicionar um apurador, você deve obrigatoriamente clicar no "
+#~ "botão \"Enviar e-mail\", para que o apurador receba o e-mail informando "
+#~ "que deve cadastrar sua chave.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "  Helios is automatically your first trustee and will handle its keypair "
+#~ "generation and decryption automatically.<br />\n"
+#~ "  You may add additional trustees if you want, and you can even remove "
+#~ "the Helios trustee.<br />\n"
+#~ "  However, we recommend you do this only if you have a solid "
+#~ "understanding of the trustee's role.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  Se você não quiser cadastrar apuradores externos ao sistema, O Helios é "
+#~ "automaticamente seu primeiro apurador e irá tratar da geração de chaves e "
+#~ "desencriptação automaticamente.<br />\n"
+#~ "  Se você cadastrar apuradores adicionais, você pode remover o Helios "
+#~ "como apurador, clicando no botão de excluir da opção \"Sistema de Votação "
+#~ "Online do IFSC\" na listagem de apuradores abaixo.<br />\n"
+
+#~ msgid "add a trustee"
+#~ msgstr "adicionar um apurador"
+
+#~ msgid "add Helios as a trustee"
+#~ msgstr "adicionar o sistema de votação (Helios) como apurador"
+
+#~ msgid "Below are listed the trustees for this election."
+#~ msgstr ""
+#~ "Aqui estão listadas as pessoas habilitadas como apuradoras desta eleição."
+
+#~ msgid "Public Key Fingerprint:"
+#~ msgstr "Código de Identificação da Chave Pública:"
+
+#~ msgid "No public key uploaded yet."
+#~ msgstr "Nenhuma chave pública carregada ainda."
+
+#~ msgid "tally recorded for this trustee."
+#~ msgstr "apuração registrada para esse apurador."
+
+#~ msgid "waiting for this trustee's tally"
+#~ msgstr "esperando pela apuração deste apurador"
+
+#~ msgid "Remove trustee"
+#~ msgstr "Remover apurador"
+
+#~ msgid "send login"
+#~ msgstr "enviar login"
+
+#~ msgid "New Trustee"
+#~ msgstr "Novo Apurador"
+
+#~ msgid "Name:"
+#~ msgstr "Nome:"
+
+#~ msgid "Email:"
+#~ msgstr "Email:"
+
+#~ msgid "Add Trustee"
+#~ msgstr "Adicionar Apurador"
+
+#~ msgid "Cookies are required for Helios use"
+#~ msgstr "Cookies são necessários para o uso do Helios"
+
+#~ msgid "Cookies are Required for Helios"
+#~ msgstr "Helios requer o uso de Cookies"
+
+#~ msgid ""
+#~ "\n"
+#~ "It appears your browser does not support cookies or is set up to block "
+#~ "cookies from this site. Helios needs to set a session cookie so that it "
+#~ "can save your vote, let you log in, etc. Enable cookies and then <a href="
+#~ "\"%(retest_url)s\">proceed to preparing your ballot</a>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Parece que o seu navegador não aceita cookies ou está configurado para "
+#~ "bloqueá-los nesse site. O Helios precisa configurar um cookie de sessão "
+#~ "para poder salvar o seu voto, deixar você conectar, etc. Habilite o uso "
+#~ "de cookies e então <a href=\"%(retest_url)s\">prossiga para preparar sua "
+#~ "cédula</a>\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "If you keep getting sent back to this page, it's probably because you "
+#~ "haven't enabled cookies successfully.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Se você continua sendo enviado para esta página, é provavel que você não "
+#~ "habilitou os cookies com sucesso.\n"
+
+#~ msgid "Log In to View Election"
+#~ msgstr "Conectar para Visualizar Eleições"
+
+#~ msgid "Private Election - Please Log In"
+#~ msgstr "Por favor, conecte-se."
+
+#~ msgid "Release Result &mdash; {{election.name}}"
+#~ msgstr "Liberar Resultado &mdash; {{election.name}}"
+
+#~ msgid "Release Result"
+#~ msgstr "Liberar o Resultado"
+
+#~ msgid "You are about to release the result for this election."
+#~ msgstr "Você está prestes a liberar o resultado para essa eleição."
+
+#~ msgid "Send email to voters reporting release of result."
+#~ msgstr "Enviar email para os eleitores avisando do resultado."
+
+#~ msgid "release result!"
+#~ msgstr "liberar o resultado!"
+
+#~ msgid "Share"
+#~ msgstr "Compartilhar"
+
+#~ msgid "Tweet"
+#~ msgstr "Tuíte"
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "elections"
+#~ msgstr "eleições"
+
+msgid "recent votes"
+msgstr "votos recentes"
+
+#~ msgid "recent problem elections"
+#~ msgstr "eleições problemáticas recentes"
+
+#~ msgid "Admin actions"
+#~ msgstr "Ações Administrativas"
+
+#~ msgid "votes in queue."
+#~ msgstr "votos na fila."
+
+#~ msgid "force it"
+#~ msgstr "forçar"
+
+#~ msgid "Admin Actions"
+#~ msgstr "Ações Administrativas"
+
+#~ msgid "previous"
+#~ msgstr "anterior"
+
+#~ msgid "Actions"
+#~ msgstr "Ações"
+
+#~ msgid "User"
+#~ msgstr "Usuário"
+
+#~ msgid "Action"
+#~ msgstr "Ação"
+
+#~ msgid "Details"
+#~ msgstr "Detalhes"
+
+#~ msgid "At"
+#~ msgstr "Data e Hora"
+
+#~ msgid "Elections"
+#~ msgstr "Eleições"
+
+#~ msgid "clear search"
+#~ msgstr "limpar busca"
+
+#~ msgid "voters / cast votes"
+#~ msgstr "eleitores / votos depositados"
+
+#~ msgid "Problematic Elections"
+#~ msgstr "Eleições Problemáticas"
+
+#~ msgid "Unfrozen for more than a day."
+#~ msgstr "Desbloqueada por mais de um dia."
+
+msgid "Recent Votes"
+msgstr "Votos Recentes"
+
+#~ msgid "Last 24 hours"
+#~ msgstr "Últimas 24 horas"
+
+#~ msgid "last cast vote"
+#~ msgstr "último voto depositado"
+
+#~ msgid "recently cast votes"
+#~ msgstr "voto (s) depositado (s) recentemente"
+
+#~ msgid "your secret key matches!"
+#~ msgstr "a sua chave secreta confere!"
+
+#~ msgid "OH OH, your key is bad."
+#~ msgstr "A sua chave não confere."
+
+#~ msgid "Check Secret Key"
+#~ msgstr "Verificar Chave Privada"
+
+#~ msgid "back to trustee home"
+#~ msgstr "voltar à página do apurador"
+
+#~ msgid "Your public key fingerprint is:"
+#~ msgstr "O código de identificação de sua chave pública é:"
+
+#~ msgid "loading crypto functions..."
+#~ msgstr "carregando funções de criptografia..."
+
+#~ msgid "To verify that you have the right secret key, paste it here:"
+#~ msgstr "Para verificar se você tem a chave secreta correta, cole-a aqui:"
+
+#~ msgid "check"
+#~ msgstr "checar"
+
+#~ msgid "checking your secret key..."
+#~ msgstr "verificando sua chave privada..."
+
+#~ msgid "Decrypt Result for"
+#~ msgstr "Decifrar Resultados para"
+
+#~ msgid "Trustee:"
+#~ msgstr "Apurador:"
+
+#~ msgid "Encrypted Tally Fingerprint:"
+#~ msgstr "Código de Identificação da Apuração Criptografada:"
+
+#~ msgid ""
+#~ "\n"
+#~ "      The encrypted tally for your election has been computed.<br />\n"
+#~ "      Now it's time to compute and submit your partial decryption.\n"
+#~ "      "
+#~ msgstr ""
+#~ "\n"
+#~ "      A apuração criptografada da sua eleição foi computada.<br />\n"
+#~ "     Agora é hora de computar e enviar sua desencriptação parcial.\n"
+#~ "      "
+
+#~ msgid ""
+#~ "\n"
+#~ "      This process is performed in two steps.<br /><br />\n"
+#~ "      <u>First</u>, your secret key is used to decrypt the tally "
+#~ "<em>inside</em> your browser, without connecting to the network.<br />\n"
+#~ "      You can choose to take your browser \"offline\" for this step, if "
+#~ "you'd like.<br /><br />\n"
+#~ "      <u>Second</u>, once your decryption factors have been computed, "
+#~ "your browser will need to be \"online\" to submit them to the server.<br /"
+#~ ">\n"
+#~ "      If you'd like, you can compute your decryption factors, copy them "
+#~ "to your clipboard, restart your browser, and<br />\n"
+#~ "      skip to the second step so that your browser is never online when "
+#~ "you enter your secret key.\n"
+#~ "      "
+#~ msgstr ""
+#~ "\n"
+#~ "      Esse processo é executado em duas partes.<br /><br />\n"
+#~ "      <u>Primeiro</u>, sua chave privada é utilizada para desencriptar a "
+#~ "apuração <em>dentro</em> do seu navegador, sem conectar com a rede.<br /"
+#~ ">\n"
+#~ "      Você pode escolher deixar o navegador \"offline\" para esse passo, "
+#~ "se preferir.<br /><br />\n"
+#~ "      <u>Segundo</u>, assim que seus fatores de desencriptação forem "
+#~ "computados, seu navegador precisará ficar \"online\" para enviá-los ao "
+#~ "servidor.<br />\n"
+#~ "      Se você preferir, você pode computar seus fatores de "
+#~ "desencriptação, copiá-los para a área de transferência, reiniciar seu "
+#~ "navegador, e<br />\n"
+#~ "      pular para o segundo passo, de modo que seu navegador nunca estará "
+#~ "online quando você informar sua chave privada.\n"
+#~ "      "
+
+#~ msgid "FIRST STEP: enter your secret key"
+#~ msgstr "PRIMEIRO PASSO: informe sua chave secreta"
+
+#~ msgid "Generate partial decryption"
+#~ msgstr "Gerar minha parte da desencriptação"
+
+#~ msgid "skip to the second step"
+#~ msgstr "pular para o segundo passo"
+
+#~ msgid "(you need to have already computed your decryption factors.)"
+#~ msgstr "(você precisa já ter computado os fatores de desencriptação.)"
+
+#~ msgid "Generating partial decryption factors and proofs..."
+#~ msgstr "Gerando os fatores de desencriptação parcial e provas..."
+
+#~ msgid "Submitting and checking your decryption factors and proofs..."
+#~ msgstr "Submetendo e checando seus fatores de desencriptação e provas..."
+
+#~ msgid "SECOND STEP: upload your partial decryption"
+#~ msgstr "SEGUNDO PASSO: carregar sua desencriptação parcial"
+
+#~ msgid ""
+#~ "\n"
+#~ "          Your partial decryption factors and proofs have been generated "
+#~ "below.<br />\n"
+#~ "          Your secret key has been cleared from memory.<br />\n"
+#~ "          When you're ready, you can submit this result to the server.\n"
+#~ "      "
+#~ msgstr ""
+#~ "\n"
+#~ "          Seus fatores de desencriptação parcial e provas foram gerados a "
+#~ "seguir.<br />\n"
+#~ "          Sua chave privada foi limpa da memória.<br />\n"
+#~ "          Quando estiver pronto, você pode submeter este resultado ao "
+#~ "servidor.\n"
+#~ "      "
+
+#~ msgid "Your partial decryption:"
+#~ msgstr "Sua desencriptação parcial:"
+
+#~ msgid "Upload decryption factors to server"
+#~ msgstr "Carregar fatores de desencriptação para o servidor"
+
+#~ msgid "reset and restart decryption process"
+#~ msgstr "restaurar e reiniciar o processo de desencriptação"
+
+#~ msgid "Done!"
+#~ msgstr "Pronto!"
+
+#~ msgid "Back to election"
+#~ msgstr "Voltar para eleição"
+
+#~ msgid "Error: your secret key was likely incorrect."
+#~ msgstr "Erro: sua chave privada provavelmente está incorreta."
+
+#~ msgid ""
+#~ "You have successfully uploaded your public key.<br />Your public key "
+#~ "fingerprint is:\n"
+#~ msgstr ""
+#~ "Você carregou com sucesso sua chave pública.<br />O código de "
+#~ "identificação de sua chave pública é:\n"
+
+#~ msgid "You can"
+#~ msgstr "Você pode"
+
+#~ msgid "verify that you have the right secret key."
+#~ msgstr "verificar se você tem a chave privada correta."
+
+#~ msgid ""
+#~ "We recommend that you do verify, to validate the private key you've saved."
+#~ msgstr ""
+#~ "Recomendamos fortemente que você faça essa verificação, para validar que "
+#~ "você salvou corretamente a chave secreta."
+
+#~ msgid "setup your key "
+#~ msgstr "configurar chave de apurador "
+
+#~ msgid ""
+#~ "\n"
+#~ "You have successfully uploaded your decryption.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Você carregou com sucesso sua desencriptação.\n"
+
+#~ msgid "The encrypted tally for this election is ready."
+#~ msgstr "A apuração criptografada dessa eleição está pronta."
+
+#~ msgid "decrypt with your key"
+#~ msgstr "decifrar com sua chave"
+
+#~ msgid ""
+#~ "\n"
+#~ "ATTENTION: Once the tally is computed, come back here to provide your "
+#~ "secret key for decryption purposes.<br />\n"
+#~ "You should keep the email with your trustee homepage link, which contains "
+#~ "the credentials needed to get back here.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<strong>ATENÇÃO: </strong>Quando a apuração for computada e for o momento "
+#~ "dos apuradores informarem suas chaves secretas,<br> você deve retornar a "
+#~ "esta página e informar sua chave secreta na opção que vai estar "
+#~ "disponível, para poder desencriptar a apuração. <br />\n"
+#~ "Guarde o email que você recebeu quando foi designado como apurador, o "
+#~ "qual contém o link com as credenciais necessárias para retornar a esta "
+#~ "página.\n"
+
+#~ msgid "Voter Eligibility for"
+#~ msgstr "Eligibilidade de Eleitor para"
+
+#~ msgid "Voter Eligibility"
+#~ msgstr "Eligibilidade de Eleitor"
+
+#~ msgid "back to voters"
+#~ msgstr "voltar para eleitores"
+
+#~ msgid ""
+#~ "\n"
+#~ "You may limit eligibility of voters to one of these categories, as "
+#~ "defined by %(user.user_type)s:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Você pode limitar a aptidão dos eleitores para uma dessas categorias, "
+#~ "conforme definido por %(user.user_type)s:\n"
+
+#~ msgid "set eligibility"
+#~ msgstr "configurar eligibilidade"
+
+#~ msgid "Contact Voters for"
+#~ msgstr "Contactar Eleitores para"
+
+#~ msgid "Contact Voters"
+#~ msgstr "Contactar Eleitores"
+
+#~ msgid "You are sending this email to a specific user:"
+#~ msgstr "Você está enviando esse email para:"
+
+#~ msgid "Choose the email type you want to send:"
+#~ msgstr "Escolha o tipo de email que você quer enviar:"
+
+#~ msgid "Subject:"
+#~ msgstr "Assunto:"
+
+#~ msgid ""
+#~ "You may tweak the subject and add a custom message using the form below."
+#~ msgstr ""
+#~ "Você deve ajustar o assunto e, opcionalmente, adicionar uma mensagem "
+#~ "personalizada no corpo do email, utilizando o formulário abaixo."
+
+#~ msgid "Subject"
+#~ msgstr "Assunto"
+
+#~ msgid "Body"
+#~ msgstr "Corpo"
+
+#~ msgid ""
+#~ " What you type in here is what you get in the BODY tag on the template "
+#~ "above "
+#~ msgstr ""
+#~ " O que você informar aqui é o que vai ser exibido no elemento BODY "
+#~ "destacado no template acima."
+
+#~ msgid "Send"
+#~ msgstr "Enviar"
+
+#~ msgid "Done, go"
+#~ msgstr "Pronto, ir"
+
+#~ msgid ""
+#~ "\n"
+#~ "    Error emailing participants. Check server settings, make sure there's "
+#~ "an SMTP server.\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "    Erro enviando email aos participantes. Verifique as configurações do "
+#~ "servidor e certifique-se de que há um servidor SMTP.\n"
+#~ "  "
+
+#~ msgid "Ballot Tracking Center for"
+#~ msgstr "Centro de Rastreamento de Cédulas para"
+
+#~ msgid "Voters and Ballot Tracking Center"
+#~ msgstr "Centro de Rastreamento de Cédulas e Eleitores"
+
+#~ msgid ""
+#~ "Your election is marked private, which means you cannot open registration "
+#~ "up more widely"
+#~ msgstr ""
+#~ "A sua eleição está marcada como privada, o que significa que você não "
+#~ "pode abrir registro mais amplo"
+
+#~ msgid "You can change this setting:"
+#~ msgstr "Configure a lista com os eleitores desta eleição:"
+
+#~ msgid "anyone can vote"
+#~ msgstr "Qualquer eleitor que possa se conectar no sistema."
+
+#~ msgid "only voters listed explicitly below can vote"
+#~ msgstr "Somente eleitores contidos no arquivo a ser carregado (arquivo CSV)"
+
+#~ msgid ""
+#~ "Do not forget to upload voters file, using the bulk upload voters button "
+#~ "bellow."
+#~ msgstr ""
+#~ "Não se esqueça de carregar o arquivo de eleitores, clicando no botão "
+#~ "carregar arquivo de eleitores."
+
+#~ msgid "only voters from the same system"
+#~ msgstr "apenas eleitores do mesmo sistema"
+
+#~ msgid "limitedreg"
+#~ msgstr "registro limitado"
+
+#~ msgid "only voters who are members of "
+#~ msgstr "apenas eleitores que são membros de"
+
+#~ msgid "update"
+#~ msgstr "atualizar"
+
+#~ msgid "email voters"
+#~ msgstr "enviar email para eleitores"
+
+#~ msgid "bulk upload voters"
+#~ msgstr "carregar arquivo de eleitores"
+
+#~ msgid "Who can vote?"
+#~ msgstr "Eleitores aptos a votar nesta eleição:"
+
+#~ msgid "Only the voters listed here"
+#~ msgstr ""
+#~ "Somente eleitores que foram cadastrados especificamente para esta eleição"
+
+#~ msgid "searching for"
+#~ msgstr "procurando por"
+
+#~ msgid "Voter name"
+#~ msgstr "Nome do eleitor"
+
+#~ msgid "cast vote"
+#~ msgstr "Total de votos depositados"
+
+#~ msgid "no votes yet"
+#~ msgstr "nenhum voto"
+
+#~ msgid "E-mail"
+#~ msgstr "E-mail:"
+
+#~ msgid ""
+#~ "Send email to this voter. This action will only be possible if the ballot "
+#~ "is already frozen."
+#~ msgstr ""
+#~ "Enviar email para esse eleitor. Essa ação só vai ser possível se você já "
+#~ "tiver congelado a cédula de votação."
+
+#~ msgid "Remove voter"
+#~ msgstr "Remover eleitor"
+
+#~ msgid "Prior Bulk Uploads:"
+#~ msgstr "Arquivos de eleitores carregados anteriormente:"
+
+#~ msgid "bytes, at"
+#~ msgstr "bytes, em"
+
+#~ msgid "done processing:"
+#~ msgstr "processamento completo:"
+
+#~ msgid "voters loaded"
+#~ msgstr "eleitor (es) carregados"
+
+#~ msgid "currently processing"
+#~ msgstr "processando"
+
+#~ msgid "not yet processed"
+#~ msgstr "ainda não foi processado"
+
+#~ msgid "Manage Voters"
+#~ msgstr "Gerenciar Eleitores"
+
+#~ msgid "Username"
+#~ msgstr "Nome de usuário"
+
+#~ msgid "Search Voters for"
+#~ msgstr "Buscar Eleitores por"
+
+#~ msgid "Voter Found:"
+#~ msgstr "Eleitor Encontrado:"
+
+#~ msgid "email this voter"
+#~ msgstr "enviar email para esse eleitor"
+
+#~ msgid "once this election is frozen, you'll be able to email this voter."
+#~ msgstr ""
+#~ "Quando essa eleição for congelada, você estará apto a enviar email para "
+#~ "esse eleitor."
+
+#~ msgid "no such voter found"
+#~ msgstr "eleitor não encontrado"
+
+#~ msgid "Bulk Upload Voters"
+#~ msgstr "Carregar arquivo de Eleitores"
+
+#~ msgid "&lt;unique_id&gt;,&lt;email&gt,&lt;full name&gt;"
+#~ msgstr "login,endereço de e-mail,nome completo"
+
+#~ msgid "For example:"
+#~ msgstr "Por exemplo:"
+
+#~ msgid "Browse"
+#~ msgstr "Procurar"
+
+#~ msgid "go"
+#~ msgstr "Carregar"
+
+#~ msgid "OK, done uploading."
+#~ msgstr "Ok, upload completo."
+
+#~ msgid "You can now"
+#~ msgstr "Agora você pode"
+
+#~ msgid "Bulk Upload Voters &mdash; Confirm"
+#~ msgstr "Carregar Eleitores em Massa &mdash; Confirmar"
+
+#~ msgid ""
+#~ "\n"
+#~ "You have uploaded a file of voters. The first few rows of this file are:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Você carregou um arquivo de eleitores. As primeiras linhas desse arquivo "
+#~ "são exibidas abaixo para simples conferência:\n"
+
+#~ msgid "Voter Login"
+#~ msgstr "Conectar como Eleitor"
+
+#~ msgid "Email Address"
+#~ msgstr "Endereço de Email"
+
+#~ msgid "HOLD ON:"
+#~ msgstr "UM MOMENTO:"
+
+#~ msgid "never mind, upload a different file"
+#~ msgstr "Não, deixe-me carregar um arquivo diferente"
+
+#~ msgid "Does this look right to you?"
+#~ msgstr "Os dados estão OK?"
+
+#~ msgid "Yes, let's go"
+#~ msgstr "Sim, carregar"
+
+#~ msgid "no, let me upload a different file"
+#~ msgstr "Não, deixe-me carregar um arquivo diferente"
+
+#~ msgid "not implemented yet"
+#~ msgstr "não implementado ainda"
+
+#~ msgid "only an administrator has elections to administer"
+#~ msgstr "somente um administrador tem eleições para administrar"
+
+#~ msgid "only an administrator can create an election"
+#~ msgstr "somente um administrador pode criar uma eleição"
+
+#~ msgid "Vote in %(election_name)s"
+#~ msgstr "Votar em %(election_name)s"
+
+#~ msgid "Register to vote in %(election_name)s"
+#~ msgstr "Registre-se para votar %(election_name)s"
+
+#~ msgid "Results are in for %(election_name)s"
+#~ msgstr "Os resultados estão em %(election_name)s"
+
+#~ msgid "You are a trustee for %(election_name)s \n"
+#~ msgstr ""
+#~ "Prezado (a),  \n"
+#~ "\n"
+#~ "Você foi designado como apurador para a eleição %(election_name)s.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Your trustee dashboard is at: \n"
+#~ " %(url)s"
+#~ msgstr ""
+#~ "Você deve obrigatoriamente entrar no endereço abaixo para que possa "
+#~ "carregar suas informações de apurador. Se não fizer isto, não será "
+#~ "possível dar continuidade a eleição. Ou seja, nenhum eleitor poderá votar "
+#~ "nesta eleição. \n"
+#~ "\n"
+#~ "A sua página de apurador pode ser acessada no endereço: \n"
+#~ "\n"
+#~ " %(url)s \n"
+#~ "\n"
+#~ "ATENÇÃO: Esse e-mail deve ser guardado para referência futura, para que "
+#~ "você possa acessar novamente sua página de apurador através do link "
+#~ "fornecido acima."
+
+#~ msgid "your trustee homepage for %(election_name)s"
+#~ msgstr "Sua página de apurador para a eleição %(election_name)s"
+
+#~ msgid " %(election_name)s trustee pk upload"
+#~ msgstr " Upload de chave pública de apurador da eleição %(election_name)s"
+
+#~ msgid "Trustee %(trustee_name)s (%(trustee_email)s) uploaded a pk."
+#~ msgstr ""
+#~ "O Apurador %(trustee_name)s (%(trustee_email)s) carregou uma chave "
+#~ "pública."
+
+#~ msgid ""
+#~ "I voted in %(url)s - my smart tracker is %(vote_hash)s.. #heliosvoting"
+#~ msgstr ""
+#~ "Eu votei em %(url)s - meu rastreador é %(vote_hash)s.. #heliosvoting"
+
+#~ msgid "registration is closed for this election"
+#~ msgstr "registro fechado para essa eleição"
+
+#~ msgid "Constraints successfully saved"
+#~ msgstr "Restrições salvas com sucesso."
+
+#~ msgid ""
+#~ "your CSV file could not be processed. Please check that it is a proper "
+#~ "CSV file."
+#~ msgstr ""
+#~ "o seu arquivo CSV não pôde ser processado. Por favor, verifique se é um "
+#~ "arquivo CSV válido."
+
+#~ msgid ""
+#~ "those don't look like correct email addresses. Are you sure you uploaded "
+#~ "a file with email address as second field?"
+#~ msgstr ""
+#~ "os dados não se parecem com e-mails válidos. Você tem certeza de que "
+#~ "carregou um arquivo com o e-mail como segundo campo?"
+
+#~ msgid "Your file should be saved in UTF-8 format"
+#~ msgstr ""
+#~ "O arquivo de eleitores deve ser salvo no formato UTF-8.Para testar se seu "
+#~ "arquivo é valido, tente abri-lo em um editor de planilhas como o "
+#~ "LibreOffice Calc e verifique se a codificação está como UTF-8. Abra-o e "
+#~ "salve-o nesse formato, geralmente na opção salvar como é possível "
+#~ "escolher a codificação."
+
+#~ msgid "no voter file specified, try again"
+#~ msgstr "nenhum arquivo carregado, tente novamente"
+
+#~ msgid "Time to Vote"
+#~ msgstr "Hora de Votar"
+
+#~ msgid "Simple"
+#~ msgstr "Simples"
+
+#~ msgid "Additional Info"
+#~ msgstr "Informação Adicional"
+
+#~ msgid "Election Result"
+#~ msgstr "Resultado da Eleição"
+
+#~ msgid "bad template"
+#~ msgstr "template inválido"
+
+#~ msgid "Log in with my Google Account"
+#~ msgstr "Conecte-se com sua conta {{voter.voter_type}}."
+
+#~ msgid "Log in with my LDAP Account"
+#~ msgstr "Conectar com meu usuário e senha do IFSC"
+
+#~ msgid "Click here to login"
+#~ msgstr "Clique aqui para se conectar"
+
+#~ msgid "Bad Username or Password"
+#~ msgstr "Usuário ou Senha Incorretos"
+
+#~ msgid "Users with the following attributes:"
+#~ msgstr "Eleitores com os seguintes atributos:"
+
+#~ msgid ""
+#~ "\n"
+#~ "    You are currently logged in as<br /><b>%(user.user_id)s</b> via <b>"
+#~ "%(user.user_type)s</b>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Você está atualmente conectado como<br /><b>%(user.user_id)s</b> via "
+#~ "<b>%(user.user_type)s</b>.\n"
+
+#~ msgid "logout"
+#~ msgstr "desconectar"
+
+#~ msgid "Password Forgotten"
+#~ msgstr "Esqueci a Senha"
+
+#~ msgid "Your Username"
+#~ msgstr "Seu nome de usuário"
+
+#~ msgid "Send Reminder"
+#~ msgstr "Enviar Lembrete"
+
+#~ msgid "Why we need your information"
+#~ msgstr "Por que nós precisamos de suas informações"
+
+#~ msgid ""
+#~ "\n"
+#~ "It looks like you declined to grant us permission to access your\n"
+#~ "information. We understand and value your privacy. We ask for this\n"
+#~ "information so we can contact you with your voting tracking number and\n"
+#~ "when an election in which you participated has been tallied. We\n"
+#~ "promise not to use this information for any other purpose. Without\n"
+#~ "this information, we unfortunately cannot help you vote.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Parece que você negou permissão de acesso às suas\n"
+#~ "informações. Nós entendemos e valorizamos sua privacidade. Nós pedimos "
+#~ "por essa\n"
+#~ "informação para que possamos contactá-lo com seu número de rastreamento "
+#~ "de voto e\n"
+#~ "quando uma eleição na qual você participou foi apurada. Nós\n"
+#~ "prometemos não usar essa informação para nenhum outro propósito. Sem\n"
+#~ "essa informação, infelizmente não podemos ajudá-lo a votar.\n"
+
+#~ msgid "OK, I understand, let's do this login thing."
+#~ msgstr "Ok, entendi, vamos efetuar o login."
+
+#~ msgid "nope, get me out of here"
+#~ msgstr "não, tire-me daqui"
+
+#~ msgid "Missing Attributes"
+#~ msgstr "Atributos faltantes"
+
+#~ msgid ""
+#~ "Some required attributes were not released by your Identity Provider."
+#~ msgstr ""
+#~ "Alguns atributos obrigatórios não foram informados pelo seu Provedor de "
+#~ "Identidade."
+
+#~ msgid "Attributes not released by your Identity Provider"
+#~ msgstr "Atributos não informados pelo seu Provedor de Identidade"
+
+#~ msgid "Attribute"
+#~ msgstr "Atributo"
+
+#~ msgid "Value"
+#~ msgstr "Valor"
+
+#~ msgid "Back"
+#~ msgstr "Voltar"
+
+#~ msgid "Twitter Follow?"
+#~ msgstr "Seguir no Twitter"
+
+#~ msgid "We recommend that you follow"
+#~ msgstr "Recomendamos que você siga"
+
+#~ msgid ""
+#~ "That way, %(reason_to_follow)s. We will not abuse of this friendship: "
+#~ "only messages pertinent to you will be sent to you directly, and general "
+#~ "updates happen only sporadically.\n"
+#~ msgstr ""
+#~ "Dessa forma, %(reason_to_follow)s. Nós não iremos abusar da amizade: "
+#~ "somente mensagens pertinentes serão enviadas a você diretamente, e "
+#~ "atualizações gerais acontecem esporadicamente.\n"
+
+#~ msgid "continue"
+#~ msgstr "continuar"
+
+#~ msgid ""
+#~ "\n"
+#~ "<h3>Your Vote is Being Submitted</h3>\n"
+#~ "<p>\n"
+#~ "Please wait a few seconds while your vote is submitted to the casting "
+#~ "server....\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<h3>Seu voto está sendo depositado</h3>\n"
+#~ "\n"
+#~ "<p>\n"
+#~ "Por favor, espere alguns segundos enquanto sua cédula é depositada na "
+#~ "urna....\n"
+#~ "</p>\n"
+
+#~ msgid "Submit Your Encrypted Ballot"
+#~ msgstr "Enviar Sua Cédula Cifrada"
+
+#~ msgid ""
+#~ "\n"
+#~ "All information, other than your encrypted ballot,<br />\n"
+#~ "has been removed from memory.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Toda a informação, exceto sua cédula cifrada,<br />\n"
+#~ "foi removida da memória.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "As a reminder, your ballot tracking number is:<br />\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Como um lembrete,  seu número de rastreamento de cédula é:<br />\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "According to the election definition file, this ballot will be submitted "
+#~ "to:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "De acordo com o arquivo de definição da eleição, esta cédula será "
+#~ "submetida para:\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "    where you will log in to validate your eligibility to vote.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    onde você vai conectar para validar sua eligibilidade para votar.\n"
+
+#~ msgid "Submit Ballot"
+#~ msgstr "Enviar Cédula"
+
+#~ msgid "Permissions"
+#~ msgstr "Permissões"
+
+#~ msgid "You don't have permission to access this view"
+#~ msgstr "Você não tem permissão para acessar essa view"
+
+#~ msgid "Can delegate institution management tasks"
+#~ msgstr "Pode delegar tarefas de gestão da instituição"
+
+#~ msgid "Can revoke institution management tasks"
+#~ msgstr "Pode revogar tarefas de gestão da instituição"
+
+#~ msgid "Can delegate election management tasks"
+#~ msgstr "Pode delegar tarefas de gestão de eleição"
+
+#~ msgid "Can revoke election management tasks"
+#~ msgstr "Pode revogar tarefas de gestão de eleição"
+
+#~ msgid "Institution Admin"
+#~ msgstr "Gestor da Instituição"
+
+#~ msgid "Election Admin"
+#~ msgstr "Gestor de Eleição"
+
+#~ msgid "Undefined"
+#~ msgstr "Indefinido"
+
+#~ msgid "All"
+#~ msgstr "Todos"
+
+#~ msgid "Elections you are current or past admin"
+#~ msgstr "Eleições nas quais você é ou foi administrador (a)"
+
+#~ msgid "Started at"
+#~ msgstr "Iníciou em"
+
+#~ msgid "Ended at"
+#~ msgstr "Finalizou em"
+
+#~ msgid "Institution"
+#~ msgstr "Instituição"
+
+#~ msgid "In progress"
+#~ msgstr "Em andamento"
+
+#~ msgid "Done"
+#~ msgstr "Finalizadas"
+
+#~ msgid "In Progress"
+#~ msgstr "Em Andamento"
+
+#~ msgid "End"
+#~ msgstr "Fim"
+
+#~ msgid "Welcome"
+#~ msgstr "Bem vindo"
+
+#~ msgid "create an election"
+#~ msgstr "criar uma eleição"
+
+#~ msgid "Year"
+#~ msgstr "Ano"
+
+msgid "no featured elections at the moment"
+msgstr "nenhuma votação em destaque no momento"
+
+#~ msgid "Your elections"
+#~ msgstr "Suas eleições"
+
+#~ msgid "See all"
+#~ msgstr "Ver todas"
+
+#~ msgid "Contact information"
+#~ msgstr "Informações de contato"
+
+#~ msgid "Main Phone: +55"
+#~ msgstr "Fone principal: + 55"
+
+#~ msgid "Secondary Phone: +55"
+#~ msgstr "Fone secundário: + 55"
+
+#~ msgid "Address:"
+#~ msgstr "Endereço:"
+
+#~ msgid "Your institution admins are:"
+#~ msgstr "Os gestores do sistema na sua instituição são:"
+
+#~ msgid "No institution admin"
+#~ msgstr "Nenhum Gestor da Instituição"
+
+#~ msgid "Institution details"
+#~ msgstr "Detalhes da instituição"
+
+#~ msgid "Short name:"
+#~ msgstr "Nome abreviado:"
+
+#~ msgid "Main phone:"
+#~ msgstr "Fone principal:"
+
+#~ msgid "Sec phone:"
+#~ msgstr "Fone secundário:"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Save"
+#~ msgstr "Salvar"
+
+#~ msgid "Elections statistics for your institution"
+#~ msgstr "Estatísticas de eleições da sua instituição"
+
+#~ msgid "Here are listed all the elections from your institution"
+#~ msgstr "Aqui estão listadas as eleições da sua instituição."
+
+#~ msgid "Voters / cast votes"
+#~ msgstr "Eleitores / votos depositados"
+
+#~ msgid "Users with role in your institution"
+#~ msgstr "Usuários com papel na sua instituição"
+
+#~ msgid "Here are listed all the users assigned for your institution"
+#~ msgstr ""
+#~ "Aqui estão listados todos os usuários habilitados para a sua instituição"
+
+#~ msgid "Role"
+#~ msgstr "Papel"
+
+#~ msgid "Active"
+#~ msgstr "Ativo"
+
+#~ msgid "Expires at"
+#~ msgstr "Expira em"
+
+#~ msgid "User did not logged yet"
+#~ msgstr "Usuário não logou ainda"
+
+#~ msgid "Remove user"
+#~ msgstr "Remover usuário"
+
+#~ msgid "Dashboard"
+#~ msgstr "Painel de Controle"
+
+#~ msgid "Manage Users"
+#~ msgstr "Gerenciar Usuários"
+
+#~ msgid "Logs"
+#~ msgstr "Registros"
+
+#~ msgid "View my details"
+#~ msgstr "Ver meus detalhes"
+
+#~ msgid "Delegate Institution Admin"
+#~ msgstr "Delegar Gestor da Instituição"
+
+#~ msgid "Enter email"
+#~ msgstr "Informar e-mail"
+
+#~ msgid "Add"
+#~ msgstr "Adicionar"
+
+#~ msgid "Add new Election Admin"
+#~ msgstr "Adicionar novo Gestor de Eleição"
+
+#~ msgid "Home"
+#~ msgstr "Início"
+
+#~ msgid "Logout"
+#~ msgstr "Desconectar"
+
+#~ msgid "Federated Access"
+#~ msgstr "Acesso Federado"
+
+#~ msgid "All Elections"
+#~ msgstr "Todas as eleições"
+
+#~ msgid "Recently cast votes"
+#~ msgstr "Voto (s) depositado (s) recentemente"
+
+#~ msgid "Last cast vote"
+#~ msgstr "Último voto depositado"
+
+#~ msgid "User details"
+#~ msgstr "Detalhes do Usuário"
+
+#~ msgid ""
+#~ "Here are listed all the attributes your Identity Provider has released"
+#~ msgstr ""
+#~ "Aqui estão listados todos os atributos que o seu Provedor de Identidade "
+#~ "forneceu"
+
+#~ msgid "Released attributes by your Identity Provider"
+#~ msgstr "Atributos fornecidos pelo seu Provedor de Identidade"
+
+#~ msgid "Please, provide a valid expires at value"
+#~ msgstr "Por favor, informe uma data válida de expiração"
+
+#~ msgid "Expires at successfully saved."
+#~ msgstr "Data de expiração salva com sucesso."
+
+#~ msgid "Something went wrong, please try again."
+#~ msgstr "Ocorreu um erro, por favor, tente novamente."
+
+#~ msgid "An e-mail must be informed"
+#~ msgstr "Um e-mail precisa ser informado"
+
+#~ msgid "E-mail successfully saved"
+#~ msgstr "E-mail salvo com sucesso"
+
+#~ msgid "User successfully removed"
+#~ msgstr "Usuário removido com sucesso."
+
+#~ msgid "User not found"
+#~ msgstr "Usuário não encontrado"
+
+#~ msgid "Success"
+#~ msgstr "Sucesso"
+
+#~ msgid "Modify"
+#~ msgstr "Modificar"
+
+#~ msgid " object of "
+#~ msgstr " objeto de "
+
+#~ msgid "[vote cast] - %(election_name)s"
+#~ msgstr "[VOTO DEPOSITADO] - %(election_name)s"
+
+#~ msgid "About Helios Voting"
+#~ msgstr "Sobre o Sistema de Votação Helios"
+
+#~ msgid "Helios is a non-partisan organization led by"
+#~ msgstr "Helios é uma organização não partidária liderada por"
+
+#~ msgid "Code Contributors"
+#~ msgstr "Contribuintes do Código"
+
+#~ msgid "technical documentation"
+#~ msgstr "documentação técnica"
+
+#~ msgid "original peer-reviewed"
+#~ msgstr "original revisado em pares"
+
+#~ msgid "Helios Election Monitor"
+#~ msgstr "Monitor de Eleição do Helios"
+
+#~ msgid "Helios has been covered in the press:"
+#~ msgstr "O Helios foi coberto pela imprensa:"
+
+#~ msgid "Your Vote was Cast"
+#~ msgstr "Seu Voto foi Lançado"
+
+#~ msgid ""
+#~ "\n"
+#~ "    A vote was successfully cast for <b>%(voter.voter_id)s</b>, with vote "
+#~ "fingerprint:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Um voto foi depositado com sucesso para <b>%(voter.voter_id)s</b>, "
+#~ "com o código de identificação:\n"
+
+#~ msgid "Visit the"
+#~ msgstr "Visite o"
+
+#~ msgid "election homepage"
+#~ msgstr "Página da eleição"
+
+#~ msgid ""
+#~ "This election has already been tallied (or at least the tally has begun), "
+#~ "so you can no longer cast a vote."
+#~ msgstr ""
+#~ "Essa eleição já foi apurada (ou pelo menos a apuração já começou), então "
+#~ "você não pode mais depositar um voto."
+
+#~ msgid "view the election"
+#~ msgstr "visualizar a eleição"
+
+#~ msgid "by"
+#~ msgstr "por"
+
+msgid "create election"
+msgstr "criar eleição"
+
+msgid "Administration"
+msgstr "Administração"
+
+msgid "none yet"
+msgstr "nada ainda"
+
+msgid "see all"
+msgstr "ver todas"
+
+msgid "Log In to Start Voting"
+msgstr "Conecte-se para iniciar a votação"
+
+#~ msgid ""
+#~ "\n"
+#~ "      Select an election to start voting. You will be asked for your "
+#~ "voting credentials after you complete a ballot.\n"
+#~ "      "
+#~ msgstr ""
+#~ "\n"
+#~ "    Selecione uma eleição para começar a votar. Suas credenciais para "
+#~ "votar serão solicitadas após você preencher a cédula.\n"
+#~ "    "
+
+#~ msgid "IFSC E-Voting System"
+#~ msgstr "Sistema de Votação Online do IFSC"
+
+#~ msgid "Welcome to IFSC E-Voting System"
+#~ msgstr "Bem Vindo ao Sistema de Votação Online do IFSC"
+
+#~ msgid "Could not complete your request"
+#~ msgstr "Não foi possível completar sua requisição"
+
+#~ msgid ""
+#~ "\n"
+#~ "The action you have requested could not be performed.\n"
+#~ "Possible reasons are that you do not have appropriate persmissions or you "
+#~ "are trying to send email to voters of a non frozen election, for "
+#~ "instance.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "A ação requisitada não pôde ser executada.\n"
+#~ "As razões possíveis são que você não tem as permissões apropriadas ou "
+#~ "está tentando enviar email para eleitores de uma eleição não congelada, "
+#~ "por exemplo.\n"
+
+#~ msgid "Page not found"
+#~ msgstr "Página não encontrada"
+
+#~ msgid "The page you requested could not be found."
+#~ msgstr "A página que você solicitou não foi encontrada."
+
+#~ msgid "Server error"
+#~ msgstr "Erro no servidor"
+
+#~ msgid "There was an error while handling your request."
+#~ msgstr "Houve um erro durante o processamento de sua requisição."
+
+#~ msgid "but this election requires election-specific credentials."
+#~ msgstr "mas essa eleição requer credenciais específicas à eleição."
+
+#~ msgid ""
+#~ "\n"
+#~ "  Now, we need you to log in, so we can verify your eligibility.<br /"
+#~ "><br />\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "  Para que sua cédula seja realmente depositada na urna, você deve se "
+#~ "conectar com seu usuário e senha, para que possamos verificar se você é "
+#~ "um eleitor válido nessa eleição.<br /><br />\n"
+#~ "  "
+
+#~ msgid ""
+#~ "\n"
+#~ "\tThis %(pretty_type)s was initially scheduled to end at "
+#~ "%(voting_ends_at)s, but has been extended until "
+#~ "%(voting_extended_until)s.\n"
+#~ "\t"
+#~ msgstr ""
+#~ "\n"
+#~ "Essa %(pretty_type)s foi inicialmente agendada para terminar em "
+#~ "%(voting_ends_at)s,<br />\n"
+#~ "mas foi extendida até %(voting_extended_until)s.\n"
+#~ "\t"
+
+#~ msgid ""
+#~ "\n"
+#~ "This %(pretty_type)s is scheduled to end at %(voting_ends_at)s (UTC).\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Essa %(pretty_type)s está agendada para terminar em %(voting_ends_at)s.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "  Election %(election.name)s Already Tallied \n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "  A Eleição %(election.name)s já foi apurada \n"
+#~ "  "
+
+#~ msgid "Election type"
+#~ msgstr "Tipo da eleição"
+
+#~ msgid "private"
+#~ msgstr "privada"
+
+#~ msgid "public"
+#~ msgstr "publica"
+
+#~ msgid "only voters with the following attributes"
+#~ msgstr "Apenas eleitores com os seguintes atributos"
+
+#~ msgid "Dynamic Fields - CAFe Attributes"
+#~ msgstr "Campos Dinâmicos - Atributos CAFe"
+
+#~ msgid ""
+#~ "\n"
+#~ "\t\t                    Click the plus button to add attributes.<br>\n"
+#~ "\t\t                    Example: affiliationType = student<br>\n"
+#~ "\t\t                    <label class=\"label label-warning\">Attention: "
+#~ "all the attributes you set must be provided by your Identity Provider.</"
+#~ "label>\n"
+#~ "\t\t                "
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t                    Clique no botão + para adicionar atributos.<br>\n"
+#~ "\t\t                    Exemplo: affiliationType = student<br>\n"
+#~ "\t\t                    <label class=\"label label-warning\">Atenção: "
+#~ "todos os atributos que você configurar terão que ser informados pelo seu "
+#~ "provedor de identidade para o eleitor.</label>\n"
+#~ "\t\t                "
+
+#~ msgid "Attribute Name"
+#~ msgstr "Nome do atributo"
+
+#~ msgid "Comma separated attribute value. Ex. val1,val2,val3"
+#~ msgstr "Valores separados por vírgula. Exemplo: val1, val2, val3."
+
+#~ msgid ""
+#~ "You have successfully cast a vote in\n"
+#~ "\n"
+#~ "%(election_name)s\n"
+#~ msgstr ""
+#~ "Você depositou com sucesso um voto na eleição\n"
+#~ "\n"
+#~ "%(election_name)s\n"
+
+#~ msgid ""
+#~ "Your ballot is archived at:\n"
+#~ "\n"
+#~ "%(cast_url)s\n"
+#~ msgstr ""
+#~ "O seu voto está guardado em:\n"
+#~ "\n"
+#~ "%(cast_url)s\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "This election uses voter aliases to protect your privacy.Your voter alias "
+#~ "is :\n"
+#~ "\n"
+#~ "%(voter_alias)s"
+#~ msgstr ""
+#~ "\n"
+#~ "Essa eleição utiliza pseudônimos, para proteger sua privacidade. O seu "
+#~ "pseudônimo de eleitor é :\n"
+#~ "\n"
+#~ "%(voter_alias)s"
+
+#~ msgid "New"
+#~ msgstr "Novo"
+
+#~ msgid "Admins"
+#~ msgstr "Gestores"
+
+#~ msgid "An election with short name %(short_name)s already exists"
+#~ msgstr "Uma eleição com o nome abreviado de %(short_name)s já existe"
+
+#~ msgid "You are registered to vote in this {{election.election_type}}."
+#~ msgstr "Você está apto (a) a votar nesta {{election.election_type}}."
+
+#~ msgid "Your voter alias is {{voter.alias}}."
+#~ msgstr "Seu pseudônimo de eleitor é {{voter.alias}}."
+
+#~ msgid "Release Tally"
+#~ msgstr "Liberar Apuração"
+
+#~ msgid "release the tally!"
+#~ msgstr "liberar a apuração!"
+
+#~ msgid "download candidate bios &amp; statements"
+#~ msgstr "baixe as biografias e declarações dos candidatos"
+
+#~ msgid ""
+#~ "adding this HTML to your site displays a thin banner with direct links to "
+#~ "voting."
+#~ msgstr ""
+#~ "adicionando esse HTML ao seu site, exibe um banner fino com um link "
+#~ "direto para a votação."
+
+#~ msgid "The result is released and all voters are notified."
+#~ msgstr ""
+#~ "A urna foi apurada com sucesso. Você deve agora liberar os resultados e "
+#~ "se desejar, notificar os usuários sobre o resultado da eleição."
+
+#~ msgid "voters"
+#~ msgstr "eleitor (es)"
+
+#~ msgid "cast votes"
+#~ msgstr "voto (s) depositado (s)"
+
+#~ msgid ""
+#~ "\n"
+#~ "<h3>Your Vote is Being Submitted</h3>\n"
+#~ "\n"
+#~ "<p>\n"
+#~ "Please wait a few seconds while your vote is submitted to the casting "
+#~ "server....\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<h3>Seu voto está sendo depositado</h3>\n"
+#~ "\n"
+#~ "<p>\n"
+#~ "Por favor, espere alguns segundos enquanto sua cédula é depositada na "
+#~ "urna...\n"
+#~ "</p>\n"
+
+#~ msgid "You are signed in as voter"
+#~ msgstr "Você está conectado como um eleitor"
+
+#~ msgid "in election"
+#~ msgstr "em eleição"
+
+#~ msgid "sign out"
+#~ msgstr "desconectar"
+
+#~ msgid "Not logged in."
+#~ msgstr "Não conectado."
+
+#~ msgid "Log in"
+#~ msgstr "Conectar"
+
+#~ msgid "powered by"
+#~ msgstr "powered by"
+
+#~ msgid "Templates"
+#~ msgstr "Templates"
+
+#~ msgid "Dear"
+#~ msgstr "Caro(a)"
+
+#~ msgid "The tally for"
+#~ msgstr "A apuração da"
+
+#~ msgid "has been computed and released:"
+#~ msgstr "foi computado e liberado"
+
+#~ msgid "Your smart ballot tracker in this election was:"
+#~ msgstr "O número do rastreador da sua cédula nesta eleição foi:"
+
+#~ msgid "If you believe this tracker to be in error, please contact us."
+#~ msgstr ""
+#~ "Se você acha que esse rastreamento está errado, por favor nos informe."
+
+#~ msgid "Your voter ID:"
+#~ msgstr "Seu ID de Eleitor:"
+
+#~ msgid "Your password:"
+#~ msgstr "Sua Senha:"
+
+#~ msgid "We have recorded your vote with smart tracker:"
+#~ msgstr "O seu voto foi registrado com o rastreador:"
+
+#~ msgid "You may re-vote if you wish: only your last vote counts."
+#~ msgstr ""
+#~ "Você pode votar novamente, se desejar. Apenas seu último voto será "
+#~ "contabilizado."
+
+#~ msgid ""
+#~ "\n"
+#~ "In order to protect your privacy, this election is configured\n"
+#~ "to never display your voter login ID, name, or email address to the "
+#~ "public.\n"
+#~ "Instead, the ballot tracking center will only display your alias.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Para proteger sua privacidade, essa eleição está configurada para\n"
+#~ "nunca mostrar seu login, nome, ou email para o publico.\n"
+#~ "O centro de rastreamento de cédulas vai mostrar apenas seu apelido.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "IMPORTANTLY, when you are prompted to log in to vote,\n"
+#~ "please use your *voter ID*, not your alias.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "IMPORTANTE, quando seu usuário e senha de eleitor forem solicitados,\n"
+#~ "use o seu  *ID de Eleitor*, não o seu pseudônimo.\n"
+
+#~ msgid "Log in </a> to check your eligibility."
+#~ msgstr "Conecte-se </a> para checar se você pode votar nessa eleição."
+
+#~ msgid ""
+#~ "\n"
+#~ "    If you would like to specify your list of voters by name and email "
+#~ "address,<br />\n"
+#~ "    you can bulk upload a list of such voters here.<br /><br />\n"
+#~ "\n"
+#~ "    Please prepare a text file of comma-separated values with the "
+#~ "fields:\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "    Se você quiser especificar sua lista de eleitores por nome e endereço "
+#~ "de email,<br />\n"
+#~ "    você pode carregar uma lista desses eleitores aqui.<br /><br />\n"
+#~ "\n"
+#~ "    Por favor, prepare um arquivo de texto com os valores separados por "
+#~ "vírgula, com os campos:\n"
+#~ "  "
+
+#~ msgid "email"
+#~ msgstr "email"
+
+#~ msgid "Tally Released"
+#~ msgstr "Apuração Liberada"
+
+#~ msgid "menu"
+#~ msgstr "menu"
+
+#~ msgid "About Helios"
+#~ msgstr "Sobre o Helios"
+
+#~ msgid "not logged in."
+#~ msgstr "não conectado."
+
+#~ msgid "log in"
+#~ msgstr "conectar"
+
+#~ msgid "Vote:"
+#~ msgstr "Votar:"
+
+#~ msgid "Vote in this {{election_type}} "
+#~ msgstr "Votar"
+
+#~ msgid "no questions yet"
+#~ msgstr "nenhuma questão ainda"
+
+#, fuzzy
+#~ msgid "cast ballot"
+#~ msgstr "voto(s) depositado(s)"
+
+#~ msgid "type"
+#~ msgstr "tipo"
+
+#, fuzzy
+#~ msgid "name"
+#~ msgstr "Nome de usuário"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "You are <em>not eligible</em> to vote in this %(election."
+#~ "election_type)s.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Você <em>não está apto</em> a votar nesta(e) %(election_type)s.\n"
