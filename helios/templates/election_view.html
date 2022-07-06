@@ -1,4 +1,5 @@
 {% extends TEMPLATE_BASE %}
+{% load i18n %}
 {% block title %}{{election.name}}{% endblock %}
 {% block content %}
 <div style="float: left; margin-right: 50px;">
@@ -21,7 +22,7 @@
 {% if admin_p %}
 {% if not election.private_p %}
 {% if election.featured_p %}
-this {{election.election_type}} is featured on the front page.
+this haha {{election.election_type}} is featured on the front page.
 {% if can_feature_p %}
 [<a href="{% url "election@set-featured" election.uuid %}?featured_p=0">unfeature it</a>]
 {% endif %}
@@ -229,10 +230,10 @@ Your voter alias is {{voter.alias}}.
 {% if eligible_p %}
 You are eligible to vote in this election.
 {% else %}
-You are <em>not eligible</em> to vote in this {{election.election_type}}.
+    {% trans "You are <em>not eligible</em> to vote in this" %} {{election.election_type}}.
 {% endif %}
 {% else %}
-You are <em>not eligible</em> to vote in this {{election.election_type}}.
+    {% trans "You are <em>not eligible</em> to vote in this" %} {{election.election_type}}.
 <br />
 {% endif %}
 {% endif %}

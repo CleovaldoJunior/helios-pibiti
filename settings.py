@@ -4,6 +4,7 @@ import sys
 
 import json
 import os
+from django.utils.translation import ugettext_lazy as _
 
 TESTING = 'test' in sys.argv
 
@@ -55,19 +56,27 @@ if get_from_env('DATABASE_URL', None):
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
-# If running in a Windows environment this must be set to the same as your
-# system time zone.
-TIME_ZONE = 'America/Los_Angeles'
 
-# Language code for this installation. All choices can be found here:
-# http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+ROOT_PATH = os.path.dirname(__file__)
 
+TIME_ZONE = 'America/Sao_Paulo'
+LANGUAGE_CODE = 'pt-br'
 SITE_ID = 1
+USE_I18N = True
+USE_TZ = True
+
+LANGUAGES = (
+    ('en', _('English')),
+    ('pt-br', _('Brazilian Portuguese')),
+)
+
+LOCALE_PATHS = (
+    ROOT_PATH + '/locale',
+)
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
-USE_I18N = True
+
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
@@ -121,6 +130,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'helios.security.HSTSMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
 
     'django.middleware.common.CommonMiddleware',
@@ -129,8 +139,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'urls'
-
-ROOT_PATH = os.path.dirname(__file__)
 
 TEMPLATES = [
     {
@@ -205,7 +213,7 @@ ALLOW_ELECTION_INFO_URL = (get_from_env('ALLOW_ELECTION_INFO_URL', '0') == '1')
 FOOTER_LINKS = json.loads(get_from_env('FOOTER_LINKS', '[]'))
 FOOTER_LOGO_URL = get_from_env('FOOTER_LOGO_URL', None)
 
-WELCOME_MESSAGE = get_from_env('WELCOME_MESSAGE', "This is the default message")
+WELCOME_MESSAGE = get_from_env('WELCOME_MESSAGE', "TESTE HELIOS :)")
 
 HELP_EMAIL_ADDRESS = get_from_env('HELP_EMAIL_ADDRESS', 'help@heliosvoting.org')
 
@@ -225,9 +233,15 @@ AUTH_ENABLED_SYSTEMS = get_from_env('AUTH_ENABLED_SYSTEMS',
                                     ).split(",")
 AUTH_DEFAULT_SYSTEM = get_from_env('AUTH_DEFAULT_SYSTEM', get_from_env('AUTH_DEFAULT_AUTH_SYSTEM', None))
 
+AUTH_g = {"web":{"client_id":"623865348430-jm113kc44f9jmoiuu12opnctun1aefpr.apps.googleusercontent.com","project_id":"helios-335414","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["http://localhost:8000/auth/after/"],"javascript_origins":["http://localhost:8000"]}}
+
 # google
-GOOGLE_CLIENT_ID = get_from_env('GOOGLE_CLIENT_ID', '')
-GOOGLE_CLIENT_SECRET = get_from_env('GOOGLE_CLIENT_SECRET', '')
+#GOOGLE_CLIENT_ID = get_from_env('GOOGLE_CLIENT_ID', '')
+#GOOGLE_CLIENT_SECRET = get_from_env('GOOGLE_CLIENT_SECRET', '')
+
+GOOGLE_CLIENT_ID = AUTH_g['web']['client_id']
+GOOGLE_CLIENT_SECRET = AUTH_g['web']['client_secret']
+
 
 # facebook
 FACEBOOK_APP_ID = get_from_env('FACEBOOK_APP_ID','')

@@ -1,5 +1,6 @@
 {% extends 'server_ui/templates/base.html' %}
 {% block title %}{{ settings.SITE_TITLE }}{% endblock %}
+{% load i18n %}
 
 {% block header %}
 <h2>{{ settings.SITE_TITLE }}</h2>
@@ -46,7 +47,7 @@ More than <b>2,000,000 votes</b> have been cast using Helios.
     {% endfor %}
   </p>
   {% else %}
-  <h4>no featured elections at the moment</h4>
+  <h4> {% trans "no featured elections at the moment" %}</h4>
   {% endif %}
 {% endif %}
   
@@ -58,8 +59,8 @@ More than <b>2,000,000 votes</b> have been cast using Helios.
 {% if user %}
 <!--<div class="row right">{{user.display_html_big|safe}}</div>-->
 {% if create_p %}
-<a class="small button" href="{% url "elections@new" %}">create election</a>
-<h5 class="subheader">Administration</h5>
+<a class="small button" href="{% url "elections@new" %}">{% trans "create election" %}</a>
+<h5 class="subheader">{% trans "Administration" %}</h5>
 {% if elections_administered %}
 <ul>
 {% for election in elections_administered %}
@@ -70,12 +71,12 @@ More than <b>2,000,000 votes</b> have been cast using Helios.
 <em>none yet</em>
 {% endif %}
 <div class="row right">
-<a class="tiny button" href="{% url "elections@administered" %}">see all</a>
+<a class="tiny button" href="{% url "elections@administered" %}">{% trans "see all" %}</a>
 </div>
 <div class="row"></div>
 {% endif %}
 
-<h5 class="subheader">Recent Votes</h5>
+<h5 class="subheader">{% trans "Recent Votes" %}</h5>
 {% if elections_voted %}
 <ul>
 {% for election in elections_voted %}
@@ -83,9 +84,9 @@ More than <b>2,000,000 votes</b> have been cast using Helios.
 {% endfor %}
 </ul>
 {% else %}
-<em>none yet</em>
+<em>{% trans "none yet" %}</em>
 {% endif %}
-<div class="row right"><a class="tiny button" href="{% url "elections@voted" %}">see all</a></div>
+<div class="row right"><a class="tiny button" href="{% url "elections@voted" %}">{% trans "see all" %}</a></div>
 <div class="row"></div>
 {% else %}
 {% if settings.SHOW_LOGIN_OPTIONS %}

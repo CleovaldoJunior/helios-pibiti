@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+{% load i18n %}
 
 <head>
   <meta charset="utf-8">
@@ -67,7 +68,7 @@
         <li><a href="/privacy">Privacy</a></li>
 	{% endif %}
         <li class="divider"></li>
-        <li><a href="mailto:{{settings.HELP_EMAIL_ADDRESS}}">Help!</a></li>
+        <li><a href="mailto:{{settings.HELP_EMAIL_ADDRESS}}">{%  trans "Help" %}!</a></li>
       </ul>
     </section>
   </nav>
@@ -89,7 +90,7 @@
       {% endif %}
     </span>-->
     {% if user %}
-    logged in as <b>{{user.display_html_small|safe}}</b>&nbsp;&nbsp;
+    {% trans "logged in as" %} <b>{{user.display_html_small|safe}}</b>&nbsp;&nbsp;
     <a class="tiny button" href="{% url "auth@logout" %}?return_url={{CURRENT_URL}}">logout</a><br />
     {% else %}
     {% if voter %}

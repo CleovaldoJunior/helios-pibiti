@@ -17,6 +17,7 @@ import unicodecsv
 from django.conf import settings
 from django.db import models, transaction
 from validate_email import validate_email
+from django.utils.translation import ugettext_lazy as _
 
 from helios import datatypes
 from helios import utils
@@ -49,8 +50,8 @@ class Election(HeliosModel):
   name = models.CharField(max_length=250)
   
   ELECTION_TYPES = (
-    ('election', 'Election'),
-    ('referendum', 'Referendum')
+    ('election', _('Election')),
+    ('referendum', _('Referendum'))
     )
 
   election_type = models.CharField(max_length=250, null=False, default='election', choices = ELECTION_TYPES)
@@ -382,21 +383,21 @@ class Election(HeliosModel):
     if self.questions is None or len(self.questions) == 0:
       issues.append(
         {'type': 'questions',
-         'action': "add questions to the ballot"}
+         'action': _("add questions to the ballot")}
         )
   
     trustees = Trustee.get_by_election(self)
     if len(trustees) == 0:
       issues.append({
           'type': 'trustees',
-          'action': "add at least one trustee"
+          'action': _("add at least one trustee")
           })
 
     for t in trustees:
       if t.public_key is None:
         issues.append({
             'type': 'trustee keypairs',
-            'action': 'have trustee %s generate a keypair' % t.name
+            'action': _('have trustee %s generate a keypair') % t.name
             })
 
     if self.voter_set.count() == 0 and not self.openreg:
@@ -527,7 +528,7 @@ class Election(HeliosModel):
     election is frozen when the voter registration, questions, and trustees are finalized
     """
     if len(self.issues_before_freeze) > 0:
-      raise Exception("cannot freeze an election that has issues")
+      raise Exception(_("cannot freeze an election that has issues"))
 
     self.frozen_at = datetime.datetime.utcnow()
     
@@ -773,7 +774,7 @@ class VoterFile(models.Model):
       voter_id = voter_fields[1].strip()
 
       if not voter_type in AUTH_SYSTEMS:
-        raise Exception("invalid voter type '%s' for voter id '%s', available voter types are %s" % (voter_type, voter_id, ",".join(AUTH_SYSTEMS.keys())))
+        raise Exception(_("invalid voter type '%s' for voter id '%s', available voter types are %s") % (voter_type, voter_id, ",".join(AUTH_SYSTEMS.keys())))
 
       # default to having email be the same as voter_id
       voter_email = voter_id
@@ -781,7 +782,7 @@ class VoterFile(models.Model):
         # but if it's supplied, it will be the 3rd field.
         voter_email = voter_fields[2].strip()
       if voter_type == "password" and not validate_email(voter_email):
-        raise Exception("invalid voter email '%s' for voter id '%s'" % (voter_email, voter_id))
+        raise Exception(_("invalid voter email '%s' for voter id '%s'") % (voter_email, voter_id))
 
       # same thing for voter display name.
       voter_name = voter_email
@@ -1013,7 +1014,7 @@ class Voter(HeliosModel):
 
   def generate_password(self, length=10):
     if self.voter_password:
-      raise Exception("password already exists")
+      raise Exception(_("password already exists"))
     
     self.voter_password = utils.random_string(length, alphabet='abcdefghjkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789')
 
@@ -1110,7 +1111,7 @@ class CastVote(HeliosModel):
   def verify_and_store(self):
     # if it's quarantined, don't let this go through
     if self.is_quarantined:
-      raise Exception("cast vote is quarantined, verification and storage is delayed.")
+      raise Exception(_("cast vote is quarantined, verification and storage is delayed."))
 
     result = self.vote.verify(self.voter.election)
 
@@ -1135,7 +1136,7 @@ class CastVote(HeliosModel):
     
     # check the election
     if self.vote.election_uuid != election.uuid:
-      issues.append("the vote's election UUID does not match the election for which this vote is being cast")
+      issues.append(_("the vote's election UUID does not match the election for which this vote is being cast"))
     
     return issues
     
