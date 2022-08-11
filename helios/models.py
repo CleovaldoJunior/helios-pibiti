@@ -403,7 +403,7 @@ class Election(HeliosModel):
     if self.voter_set.count() == 0 and not self.openreg:
       issues.append({
           "type" : "voters",
-          "action" : 'enter your voter list (or open registration to the public)'
+          "action" : _('enter your voter list (or open registration to the public)')
           })
 
     return issues    
