@@ -142,8 +142,7 @@ msgstr "eleitores que depositaram uma cédula"
 
 #: helios/forms.py:41
 #, fuzzy
-#| msgid "no voters."
-msgid "not-voted"
+msgid "no voters."
 msgstr "nenhum eleitor."
 
 #: helios/forms.py:41
@@ -239,8 +238,7 @@ msgstr ""
 
 #: venv/lib/python3.8/site-packages/django/contrib/staticfiles/apps.py:9
 #, fuzzy
-#| msgid "Statistics"
-msgid "Static Files"
+msgid "Statistics"
 msgstr "Estatísticas"
 
 #: venv/lib/python3.8/site-packages/django/contrib/syndication/apps.py:7

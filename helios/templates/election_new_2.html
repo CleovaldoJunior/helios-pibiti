@@ -1,5 +1,5 @@
 {% extends "helios/templates/cryptobase.html" %}
-
+{% load i18n %}
 {% block content %}
 <script language="javascript">
 
@@ -46,14 +46,14 @@ $(document).ready(function() {
 });
 </script>
 
-  <h2 class="title">Create a New Election: {{name}}</h2>
+  <h2 class="title">{% trans "Create a New Election:" %} {{name}}</h2>
 {% ifequal election_type "helios" %}
-  <b>An election managed by Helios</b>.
+  <b>{% trans "An election managed by Helios" %}</b>.
 {% else %}
 {% ifequal election_type "one" %}
-  <b>An election managed by you, the single administrator</b>.
+  <b>{% trans "An election managed by you, the single administrator" %}</b>.
 {% else %}
-<b>An election managed by multiple trustees</b>.
+<b>{% trans "An election managed by multiple trustees" %}</b>.
 {% endifequal %}
 {% endifequal %}
   <form class="prettyform" action="{% url "helios.views.election_new_3" %}" method="POST" id="create_election_form" onsubmit="return before_create();">
@@ -63,7 +63,7 @@ $(document).ready(function() {
       <input type="hidden" name="private_key" id="sk" value="" /><br />
 
 {% ifnotequal election_type "multiple" %}
-  <label for="generate_key">&nbsp;</label><button onclick="generate_keypair(); return false;" id="generate_button">Generate Election Keys</button>
+  <label for="generate_key">&nbsp;</label><button onclick="generate_keypair(); return false;" id="generate_button">{% trans "Generate Election Keys" %}</button>
 {% else %}
 <div id="trustees">
 <h3>Trustees (up to 5)</h3>
@@ -81,12 +81,12 @@ $(document).ready(function() {
 {% ifequal election_type "one" %}
   <form style="padding-left: 200px;" id="sk_form" onsubmit="return false;">
       <input type="hidden" name="csrf_token" value="{{csrf_token}}" />
-      Your Election's Secret Key:<br />
+      {% trans "Your Election's Secret Key:" %}<br />
       <label for="">&nbsp;</label>
       <textarea id="sk_textarea" cols="60" rows="5">
       </textarea><br />
-      (You need to copy and paste this key and keep it safe,<br />
-      otherwise you won't be able to tally your election.)
+      {% trans "(You need to copy and paste this key and keep it safe,<br />
+      otherwise you won't be able to tally your election.)" %}
   </form>
 {% endifequal %}
 {% endblock %}

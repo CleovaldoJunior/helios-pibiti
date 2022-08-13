@@ -1,11 +1,11 @@
 {% extends TEMPLATE_BASE %}
-
+{% load i18n %}
 {% block content %}
 
-  <h2 class="title">Election {{election.name}} Already Tallied</h2>
+  <h2 class="title">{% trans "Election {{election.name}} Already Tallied" %}</h2>
 
   <p>
-      This election has already been tallied, you can no longer cast a vote.
+      {% trans "This election has already been tallied, you can no longer cast a vote." %}
   </p>
   
   <p>
@@ -14,6 +14,6 @@
   </p>
   
   <p>
-      <a href="{% url "election@view" election.uuid %}">view the election tally</a>
+      <a href="{% url "election@view" election.uuid %}">{% trans "view the election tally" %}</a>
   </p>
 {% endblock %}
